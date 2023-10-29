@@ -9,8 +9,30 @@ fetch(
       });
 
 function assignData(Data){
-    data = Data;
+  var data = Data;
+  var large, i, j, lloc,n ,temp;
+  n = data.length;
+    
     console.log(data);
+
+    for(i=0; i<n; i++){
+        large = data[i];
+        lloc = i;
+        for(j=i+1; j<n; j++){
+          if(data[j].score >= large.score){
+            large = data[j];
+            lloc = j;
+          }
+        }
+        if(lloc!=i){
+          temp = data[lloc];
+          data[lloc] = data[i];
+          data[i] = temp;
+        }
+    }
+
+
+
     for(i=0; i<data.length; i++){
       rankList.innerHTML = rankList.innerHTML + `
           <div class="rankItem d-flex flex-row justify-content-around align-items-center text-success pt-2 minw-25 py-md-3">
