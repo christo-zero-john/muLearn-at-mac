@@ -13,7 +13,7 @@ function assignData(Data){
     console.log(data);
     for(i=0; i<data.length; i++){
       rankList.innerHTML = rankList.innerHTML + `
-          <div class="rankItem d-flex flex-row justify-content-around align-items-center text-success pt-2">
+          <div class="rankItem d-flex flex-row justify-content-around align-items-center text-success pt-2 minw-25 py-md-3">
                       <div class="d-flex flex-column">
                             <p class="h5 ls-l fw-400  rank">Rank</p>
                             <div class="btn btn-outline-light">${i+1}</div>
