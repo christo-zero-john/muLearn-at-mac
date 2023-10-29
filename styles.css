@@ -19,6 +19,7 @@
     font-family: 'Sirin Stencil', sans-serif;
 }
 
+/* font weights */
 .fw-100{
     font-weight: 100;
 }
@@ -69,6 +70,13 @@
 
 .ls-2{
     letter-spacing: 0.3rem;
+}
+
+.bg-img-body{
+    position: fixed;
+    z-index: -2;
+    opacity: 0.5;
+    object-fit: cover;
 }
 
 .M{

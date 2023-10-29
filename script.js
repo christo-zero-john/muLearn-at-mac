@@ -20,7 +20,7 @@ function assignData(Data){
                       </div>
                         <p class="text-left p fw-400 text-light" id="name">${data[i].studentName}</p>
                         <div class="d-flex flex-column">
-                            <p class="text-danger score" >MAC Score</p>
+                            <p class="text-warning score" >MAC Score</p>
                             <div class="btn btn-outline-light">${data[i].score}</div>
                         </div>
                     </div>
