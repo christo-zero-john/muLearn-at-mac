@@ -36,14 +36,14 @@ function assignData(Data){
     for(i=0; i<data.length; i++){
       rankList.innerHTML = rankList.innerHTML + `
           <div class="rankItem d-flex flex-row justify-content-around align-items-center text-success pt-2 minw-25 py-md-3">
-                      <div class="d-flex flex-column">
-                            <p class="h5 ls-l fw-400  rank">Rank</p>
-                            <div class="btn btn-outline-light">${i+1}</div>
+                      <div class="d-flex flex-column en-seriel">
+                            <p class="h5 ls-l rank en-sirin">Rank</p>
+                            <div class="btn btn-outline-light en-iceberg">${i+1}</div>
                       </div>
-                        <p class="text-left p fw-400 text-light" id="name">${data[i].studentName}</p>
+                        <p class="text-left p fw-400 text-light en-oxanium" id="name">${data[i].studentName}</p>
                         <div class="d-flex flex-column">
-                            <p class="text-warning score" >MAC Score</p>
-                            <div class="btn btn-outline-light">${data[i].score}</div>
+                            <p class="text-warning score en-iceland h5" >MAC Score</p>
+                            <div class="btn btn-outline-light en-iceberg">${data[i].score}</div>
                         </div>
                     </div>
                     <hr class="bg-dark">

@@ -108,3 +108,7 @@
 .minw-25{
     min-width: 25vw;
 }
+
+.wd-100{
+    min-width: 98vw;
+}
