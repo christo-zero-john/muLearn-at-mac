@@ -12,21 +12,16 @@ function assignData(Data) {
   var i, j, n, temp;
   n = data.length;
 
+  // Sort the data based on scores in descending order
+  data.sort((a, b) => b.score - a.score);
+
+  // Assign ranks to students with the same score
+  var rank = 1;
   for (i = 0; i < n; i++) {
-    for (j = i + 1; j < n; j++) {
-      if (data[j].score === data[i].score) {
-        // If scores are equal, compare names to maintain alphabetical order
-        if (data[j].studentName < data[i].studentName) {
-          temp = data[j];
-          data[j] = data[i];
-          data[i] = temp;
-        }
-      } else if (data[j].score > data[i].score) {
-        temp = data[j];
-        data[j] = data[i];
-        data[i] = temp;
-      }
+    if (i > 0 && data[i].score !== data[i - 1].score) {
+      rank++;
     }
+    data[i].rank = rank;
   }
 
   for (i = 0; i < data.length; i++) {
@@ -34,7 +29,7 @@ function assignData(Data) {
       <div class="rankItem d-flex flex-row justify-content-around align-items-center text-success pt-2 minw-25 py-md-3">
         <div class="d-flex flex-column en-seriel">
           <p class="h5 ls-l rank en-sirin">Rank</p>
-          <div class="btn btn-outline-light en-iceberg">${i + 1}</div>
+          <div class="btn btn-outline-light en-iceberg">${data[i].rank}</div>
         </div>
         <p class="text-left p fw-400 text-light en-oxanium" id="name">${data[i].studentName}</p>
         <div class="d-flex flex-column">
