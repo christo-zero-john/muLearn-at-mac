@@ -1,13 +1,17 @@
 var rankList = document.getElementById("rankList");
 var top10Div = document.getElementById("top10Div");
+var macRankId = document.getElementById("macRankId");
+var macRankCard = document.getElementById("macRankCard");
 var data, rankImgSrc, color;
 
 fetch("https://opensheet.elk.sh/16yJ9HR1f8UjrJDJQBSQcbsCLvoyuFZ2NOALxzk9pdvY/mac")
   .then((res) => res.json())
   .then((Data) => {
     assignData(Data);
-    console.log("Sheet fetc and Data assigning : Success!!")
+    console.log("Sheet fetch and Data assigning : Success!!")
   });
+
+
 
 function assignData(Data) {
   var data = Data;
@@ -27,7 +31,6 @@ function assignData(Data) {
     data[i].rank = rank;
   }
   console.log("Rank assigning Succes!!");
-  console.log("Final Data: " + data);
 
   for (i = 0; i < data.length; i++) {
 
@@ -109,6 +112,56 @@ function assignData(Data) {
           `
     }
   }
+}
+
+
+function generateMacRank() {
+  var muId = macRankId.value;
+  var flag = 0;
+  fetchMacScoreData().then(data => {
+        console.log(data);
+        data.sort((a, b) => b.MACscore - a.MACscore);
+        console.log("Data Sorting Success!!");
+
+    // Assign ranks to students with the same score
+      var rank = 1;
+      for (i = 0; i < data.length; i++) {
+          if (i > 0 && data[i].MACscore !== data[i - 1].MACscore) {
+              rank++;
+          }
+          data[i].rank = rank;
+      }
+    console.log("Rank assigning Succes!!");
+
+      for (i = 0; i < data.length; i++) {
+          if (data[i].muid == muId) {
+              macRankCard.innerHTML = `
+                  <div class="text-light normalRankItem d-flex flex-row justify-content-around align-items-center normalRankBg px-2 py-1 my-3">
+                  <p class="rank my-auto h3 en-iceberg p-0 m-0">#${data[i].rank}</p>
+                  <img src="${rankImgSrc}" class="normalRankPic"></img>
+                  <p class="normalRankName my-auto text-nowrap">${data[i].studentName}</p>
+                  <p class="normalRankScore my-auto">${data[i].MACscore}</p>
+              </div>`;
+              flag = 1;
+              break;
+          }
+      }
+      if (flag != 1) {
+          macRankCard.innerHTML = `
+              <p class="alert-danger small text-center strong my-3">Whoops! Your Data is NOT FOUND, contact Admin for more details!!</p>
+          `;
+      }
+  });
+}
+
+
+function fetchMacScoreData() {
+  return fetch("https://opensheet.elk.sh/16yJ9HR1f8UjrJDJQBSQcbsCLvoyuFZ2NOALxzk9pdvY/mac")
+      .then((res) => res.json())
+      .then((Data) => {
+          console.log("return : Success!!");
+          return Data;
+      });
 }
 
 

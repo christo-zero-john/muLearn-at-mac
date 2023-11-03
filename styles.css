@@ -187,3 +187,19 @@
     width: 30px;
     height: auto;
 }
+
+#rankList{
+    height: 80vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scrollbar-width:none;
+    scrollbar-color: transparent;
+}
+
+#rankList::-webkit-scrollbar {
+    width: 5px;
+}
+
+#rankList::-webkit-scrollbar-thumb {
+    width: 5px;
+}

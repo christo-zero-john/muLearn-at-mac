@@ -11,11 +11,13 @@
 
     <!-- mycss -->
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="defaults.css" />
+
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>μLearn @ MAC</title>
+    <title>μLearn @ MAC: LeaderBoard</title>
   </head>
   <body class="bg-dark">
     <img class="bg-img-body" src="assets/img/bg-1.jpg" alt="" />
@@ -31,6 +33,12 @@
           <span class="M">ME</span> and <span class="U">YOU </span>
           <span class="Learn">Learning TOGETHER</span>
         </p>
+
+        <div class="External text-center">
+          <a href="" class="btn btn-outline-info px-5 m-0 border-0">GTech</a>
+          <a href="" class="btn btn-outline-danger px-5 m-0 border-0">μLearn</a>
+          <a href="" class="btn btn-outline-warning px-5 m-0 border-0">MAC</a>
+      </div>
       </div>
 
       <p class="h2 text-center text-primary en-iceberg pt-3 text-info">
@@ -45,22 +53,23 @@
   <!-- Top 10 End -->
     </div>
 
-      <div class="en-Oxanium p" id="rankList">
+      <div class="en-Oxanium p hd-80" id="rankList">
     <!-- ranklist end -->
       </div>
   
   <!-- Main Container end -->
   </div>
 
+  <div class="checkRank text-center">
+    <p class="h4 strong text-primary op-06 mt-5 en-iceland text-nowrap">Know Your Rank based on MAC Score</p>
+      <input class="my-auto mx-auto en-Oxanium" type="text" id="macRankId" placeholder="Enter Your MuId"> <button class="btn btn-outline-success" onclick="generateMacRank()">GET</button>
+      <div id="macRankCard"></div>
+  </div>
 
   <!-- footer -->
-      <div class="footer w-fit">
-        <p class="h5 ft-txt text-center text-success fw-200 en-sirin mt-3">
-          An Initiative By Team <span class="text-secondary">μLearn @ MAC</span>
+      <div class="footer mx-auto">
+        <p class="h5 ft-txt text-center text-success fw-200 en-sirin mt-3">An Initiative By Team <span class="text-secondary">μLearn @ MAC</span>
         </p>
-        <p class=""></p>
-        <p class=""></p>
-        
       </div>
     </div>
 
