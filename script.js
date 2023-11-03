@@ -102,7 +102,7 @@ function assignData(Data) {
           `
             <div class="text-light normalRankItem d-flex flex-row justify-content-around align-items-center normalRankBg px-2 py-1">
             <p class="rank my-auto h3 en-iceberg p-0 m-0">#${data[i].rank}</p>
-            <img src="assets/img/defaultRank.png" class="normalRankPic"></img>
+            <img src="${rankImgSrc}" class="normalRankPic"></img>
             <p class="normalRankName my-auto text-nowrap">${data[i].studentName}</p>
             <p class="normalRankScore my-auto">${data[i].MACscore}</p>
           </div>
