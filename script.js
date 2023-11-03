@@ -28,7 +28,12 @@ function assignData(Data) {
     if (i > 0 && data[i].MACscore !== data[i - 1].MACscore) {
       rank++;
     }
-    data[i].rank = rank;
+    if(data[i].score>0){
+      data[i].rank = rank;
+    }
+    else{
+      data[i].rank = 0;
+    }
   }
   console.log("Rank assigning Succes!!");
 
@@ -129,15 +134,45 @@ function generateMacRank() {
           if (i > 0 && data[i].MACscore !== data[i - 1].MACscore) {
               rank++;
           }
-          data[i].rank = rank;
+          if(data[i].score>0){
+            data[i].rank = rank;
+          }
+          else{
+            data[i].rank = 0;
+          }
       }
     console.log("Rank assigning Succes!!");
 
       for (i = 0; i < data.length; i++) {
           if (data[i].muid == muId) {
+              switch(data[i].rank){
+                  case 1: 
+                  {
+                      rankImgSrc = "assets/img/firstCrown.png"; color = "text-warning";
+                      break;
+                      
+                  }
+                  case 2:
+                    {
+                      rankImgSrc = "assets/img/secondCrown.png"; color = "text-silver";
+                      break;
+                      
+                    }
+                  case 3:
+                    {
+                      rankImgSrc = "assets/img/thirdCrown.png"; 
+                      color = "text-bronze";
+                      break;   
+                    }
+                  default: 
+                    {
+                        rankImgSrc = "assets/img/defaultRank.png";
+                        color = "text-info";
+                    }
+              }
               macRankCard.innerHTML = `
                   <div class="text-light normalRankItem d-flex flex-row justify-content-around align-items-center normalRankBg px-2 py-1 my-3">
-                  <p class="rank my-auto h3 en-iceberg p-0 m-0">#${data[i].rank}</p>
+                  <p class="rank my-auto h3 en-iceberg p-0 m-0 ${color}">#${data[i].rank}</p>
                   <img src="${rankImgSrc}" class="normalRankPic"></img>
                   <p class="normalRankName my-auto text-nowrap">${data[i].studentName}</p>
                   <p class="normalRankScore my-auto">${data[i].MACscore}</p>
