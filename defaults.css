@@ -1,0 +1,192 @@
+/* This file contains all the default css I uses in my web projects */
+
+/* widths */
+.wd-100{
+    width: 100vw;
+  }
+  
+  .wd-75{
+    width: 75vw;
+  }
+  
+  .wd-50{
+    width: 50vw;
+  }
+  
+  .wd-25{
+    width: 25vw;
+  }
+  
+  .wd-10{
+    width: 10vw;
+  }
+  
+  
+  .wd-20{
+    width:20vw;
+  }
+  
+  .wd-30{
+    width: 30vw;
+  }
+  
+  .wd-40{
+    width: 40vw;
+  }
+  
+  .wd-50{
+    width: 50vw;
+  }
+  
+  .wd-60{
+    width: 60vw;
+  }
+  
+  .wd-70{
+    width: 70vw;
+  }
+  
+  .wd-80{
+    width: 80vw;
+  }
+  
+  .wd-90{
+    width: 90vw;
+  }
+  
+  
+  .w-fit{
+    width: fit-content;
+  }
+  
+  /* heights */
+  .hd-100{
+    height: 100vw;
+  }
+  
+  .hd-75{
+    height: 75vw;
+  }
+  
+  .hd-50{
+    height: 50vw;
+  }
+  
+  .hd-25{
+    height: 25vw;
+  }
+  
+  .hd-10{
+    height: 10vw;
+  }
+  
+  .hd-20{
+    height:20vw;
+  }
+  
+  .hd-30{
+    height: 30vw;
+  }
+  
+  .hd-40{
+    height: 40vw;
+  }
+  
+  .hd-50{
+    height: 50vw;
+  }
+  
+  .hd-60{
+    height: 60vw;
+  }
+  
+  .hd-70{
+    height: 70vw;
+  }
+  
+  .hd-80{
+    height: 80vw;
+  }
+  
+  .hd-90{
+    height: 90vw;
+  }
+  
+  .h-fit{
+    height: fit-content;
+  }
+  
+  
+  /* font-weights */
+  .fw-100{
+      font-weight: 100 !important;
+  }
+  .fw-200{
+      font-weight: 200 !important;
+  }
+  .fw-300{
+      font-weight: 300 !important;
+  }
+  .fw-400{
+      font-weight: 400 !important;
+  }
+  .fw-500{
+      font-weight: 500 !important;
+  }
+  .fw-600{
+      font-weight: 600 !important;
+  }
+  .fw-700{
+      font-weight: 700 !important;
+  }
+  .fw-800{
+      font-weight: 800 !important;
+  }
+  .fw-900{
+      font-weight: 900 !important;
+  }
+  .fw-1000{
+      font-weight: 1000 !important;
+  }
+  
+  /* opacity */
+  .op-1{
+    opacity: 1;
+  }
+  
+  .op-09{
+    opacity: 0.9;
+  }
+  
+  .op-08{
+    opacity: 0.8;
+  }
+  
+  .op-07{
+    opacity: 0.7;
+  }
+  
+  .op-06{
+    opacity: 0.6;
+  }
+  
+  .op-05{
+    opacity: 0.5;
+  }
+  
+  .op-04{
+    opacity: 0.4;
+  }
+  
+  .op-03{
+    opacity: 0.3;
+  }
+  
+  .op-02{
+    opacity: 0.2;
+  }
+  
+  .op-01{
+    opacity: 0.1;
+  }
+  
