@@ -150,6 +150,7 @@ footer{
 .normalRankPic{
     width: 30px;
     height: auto;
+    float: left !important ;
 }
 
 #rankList{

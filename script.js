@@ -28,12 +28,7 @@ function assignData(Data) {
     if (i > 0 && data[i].MACscore !== data[i - 1].MACscore) {
       rank++;
     }
-    if(data[i].score>0){
-      data[i].rank = rank;
-    }
-    else{
-      data[i].rank = 0;
-    }
+    data[i].rank = rank;
   }
   console.log("Rank assigning Succes!!");
 
@@ -66,7 +61,7 @@ function assignData(Data) {
             }
       }
       top10Div.innerHTML = top10Div.innerHTML + `
-      <div class=" col-md-4 col-8 rankItemTop text-center  d-flex flex-column justify-content-around align-items-center mx-2 firstRank">
+      <div class="col-md-4 col-8 rankItemTop text-center  d-flex flex-column justify-content-around align-items-center mx-2 firstRank w-fit">
             <div>
                 <img src="${rankImgSrc}" alt="" class="firstRankPic mt-3">
                 <p class=" d-block display-3 en-sirin  z-3 ${color}">#${data[i].rank}</p>
@@ -108,7 +103,7 @@ function assignData(Data) {
         }
           rankList.innerHTML = rankList.innerHTML + 
           `
-            <div class="text-light normalRankItem d-flex flex-row justify-content-around align-items-center normalRankBg px-2 py-1">
+            <div class="text-light normalRankItem d-flex flex-row justify-content-between align-items-center normalRankBg px-2 py-1">
             <p class="rank my-auto h3 en-iceberg p-0 m-0">#${data[i].rank}</p>
             <img src="${rankImgSrc}" class="normalRankPic"></img>
             <p class="normalRankName my-auto text-nowrap">${data[i].studentName}</p>

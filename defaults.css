@@ -56,7 +56,7 @@
   
   
   .w-fit{
-    width: fit-content;
+    width: fit-content !important;
   }
   
   /* heights */
