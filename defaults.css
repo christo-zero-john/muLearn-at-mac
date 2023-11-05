@@ -189,4 +189,44 @@
   .op-01{
     opacity: 0.1;
   }
-  
+
+    /* letter spacing */
+    .ls-1{
+      letter-spacing: 1;
+    }
+    
+    .ls-09{
+      letter-spacing: 0.9;
+    }
+    
+    .ls-08{
+      letter-spacing: 0.8;
+    }
+    
+    .ls-07{
+      letter-spacing: 0.7;
+    }
+    
+    .ls-06{
+      letter-spacing: 0.6;
+    }
+    
+    .ls-05{
+      letter-spacing: 0.5;
+    }
+    
+    .ls-04{
+      letter-spacing: 0.4;
+    }
+    
+    .ls-03{
+      letter-spacing: 0.3;
+    }
+    
+    .ls-02{
+      letter-spacing: 0.2;
+    }
+    
+    .ls-01{
+      letter-spacing: 0.1;
+    }

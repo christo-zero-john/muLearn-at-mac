@@ -39,7 +39,7 @@ function assignData(Data) {
 
   for (i = 0; i < data.length; i++) {
 
-    if(i>=0 && i<=9){
+    if(i>=0 && i<=2){
       switch(data[i].rank){
           case 1: 
           {
@@ -124,7 +124,6 @@ function generateMacRank() {
   var muId = macRankId.value;
   var flag = 0;
   fetchMacScoreData().then(data => {
-        console.log(data);
         data.sort((a, b) => b.MACscore - a.MACscore);
         console.log("Data Sorting Success!!");
 
@@ -189,6 +188,14 @@ function generateMacRank() {
   });
 }
 
+function fetchKarmaPoints(){
+    return fetch("https://opensheet.elk.sh/16yJ9HR1f8UjrJDJQBSQcbsCLvoyuFZ2NOALxzk9pdvY/mac")
+        .then((res) => res.json())
+        .then((Data) => {
+            console.log("return : Success!!");
+            return Data;
+        });
+}
 
 function fetchMacScoreData() {
   return fetch("https://opensheet.elk.sh/16yJ9HR1f8UjrJDJQBSQcbsCLvoyuFZ2NOALxzk9pdvY/mac")
