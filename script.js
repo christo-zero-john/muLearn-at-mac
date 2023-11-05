@@ -66,7 +66,7 @@ function assignData(Data) {
             }
       }
       top10Div.innerHTML = top10Div.innerHTML + `
-      <div class="col-8 col-md-3 rankItemTop text-center  d-flex flex-column justify-content-around align-items-center mx-2 firstRank">
+      <div class=" col-md-4 col-8 rankItemTop text-center  d-flex flex-column justify-content-around align-items-center mx-2 firstRank">
             <div>
                 <img src="${rankImgSrc}" alt="" class="firstRankPic mt-3">
                 <p class=" d-block display-3 en-sirin  z-3 ${color}">#${data[i].rank}</p>
