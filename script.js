@@ -67,8 +67,8 @@ function assignData(Data) {
                 <p class=" d-block display-3 en-sirin  z-3 ${color}">#${data[i].rank}</p>
             </div>
             <div class="mt-4">
-                <p class="en-Oxanium h4 text-nowrap text-info">${data[i].studentName}</p>
-                <p class="en-Oxanium h4 topRankScore p-1 px-3">${data[i].MACscore}</p>
+                <p class="en-Oxanium h4 text-info">${data[i].studentName}</p>
+                <p class="en-Oxanium h4 topRankScore p-1 px-3">${data[i].MACscoreToday}</p>
             </div>
         </div>
       
@@ -107,7 +107,7 @@ function assignData(Data) {
             <p class="rank my-auto h3 en-iceberg p-0 m-0">#${data[i].rank}</p>
             <img src="${rankImgSrc}" class="normalRankPic"></img>
             <p class="normalRankName my-auto text-nowrap">${data[i].studentName}</p>
-            <p class="normalRankScore my-auto">${data[i].MACscore}</p>
+            <p class="normalRankScore my-auto">${data[i].MACscoreToday}</p>
           </div>
           `
     }
