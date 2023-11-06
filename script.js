@@ -19,13 +19,13 @@ function assignData(Data) {
   n = data.length;
 
   // Sort the data based on scores in descending order
-  data.sort((a, b) => b.MACscore - a.MACscore);
+  data.sort((a, b) => b.MACscoreToday - a.MACscoreToday);
   console.log("Data Sorting Success!!");
 
   // Assign ranks to students with the same score
   var rank = 1;
   for (i = 0; i < n; i++) {
-    if (i > 0 && data[i].MACscore !== data[i - 1].MACscore) {
+    if (i > 0 && data[i].MACscoreToday !== data[i - 1].MACscoreToday) {
       rank++;
     }
     data[i].rank = rank;
@@ -119,13 +119,13 @@ function generateMacRank() {
   var muId = macRankId.value;
   var flag = 0;
   fetchMacScoreData().then(data => {
-        data.sort((a, b) => b.MACscore - a.MACscore);
+        data.sort((a, b) => b.MACscoreToday - a.MACscoreToday);
         console.log("Data Sorting Success!!");
 
     // Assign ranks to students with the same score
       var rank = 1;
       for (i = 0; i < data.length; i++) {
-          if (i > 0 && data[i].MACscore !== data[i - 1].MACscore) {
+          if (i > 0 && data[i].MACscoreToday !== data[i - 1].MACscoreToday) {
               rank++;
           }
           if(data[i].score>0){
@@ -169,7 +169,7 @@ function generateMacRank() {
                   <p class="rank my-auto h3 en-iceberg p-0 m-0 ${color}">#${data[i].rank}</p>
                   <img src="${rankImgSrc}" class="normalRankPic"></img>
                   <p class="normalRankName my-auto text-nowrap">${data[i].studentName}</p>
-                  <p class="normalRankScore my-auto">${data[i].MACscore}</p>
+                  <p class="normalRankScore my-auto">${data[i].MACscoreToday}</p>
               </div>`;
               flag = 1;
               break;
