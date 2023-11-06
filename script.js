@@ -128,12 +128,7 @@ function generateMacRank() {
           if (i > 0 && data[i].MACscoreToday !== data[i - 1].MACscoreToday) {
               rank++;
           }
-          if(data[i].score>0){
-            data[i].rank = rank;
-          }
-          else{
-            data[i].rank = 0;
-          }
+          data[i].rank = rank;
       }
     console.log("Rank assigning Succes!!");
 
