@@ -50,7 +50,7 @@ function assignData(Data) {
     }
     default:{
       var rankImgSrc1 = "assets/img/defaultRank.png"; 
-      var color1 = "text-info";
+      var color1 = "text-light";
       break;
     }
   }
@@ -73,7 +73,7 @@ function assignData(Data) {
     }
     default:{
       var rankImgSrc2 = "assets/img/defaultRank.png"; 
-      var color2 = "text-info";
+      var color2 = "text-light";
       break;
     }
   }
@@ -96,7 +96,7 @@ function assignData(Data) {
     }
     default:{
       var rankImgSrc3 = "assets/img/defaultRank.png"; 
-      var color3 = "text-info";
+      var color3 = "text-light";
       break;
     }
   }
@@ -124,37 +124,6 @@ function assignData(Data) {
         </div>
       `
 
-
-    // if(i>=0 && i<=2){
-    //   switch(data[i].rank){
-    //       case 1: 
-    //       {
-    //           rankImgSrc = "assets/img/firstCrown.png"; color = "text-warning";
-    //           break;
-              
-    //       }
-    //       case 2:
-    //         {
-    //           rankImgSrc = "assets/img/secondCrown.png"; color = "text-silver";
-    //           break;
-              
-    //         }
-    //       case 3:
-    //         {
-    //           rankImgSrc = "assets/img/thirdCrown.png"; 
-    //           color = "text-bronze";
-    //           break;   
-    //         }
-    //       default: 
-    //         {
-    //             rankImgSrc = "assets/img/defaultRank.png";
-    //             color = "text-info";
-    //         }
-    //   }
-    // }
-
-
-
     for(i=3; i<data.length; i++)
     {
       switch(data[i].rank)
@@ -180,7 +149,7 @@ function assignData(Data) {
           default: 
             {
                 rankImgSrc = "assets/img/defaultRank.png";
-                color = "text-info";
+                color = "text-light";
             }
         }
           rankList.innerHTML = rankList.innerHTML + 
@@ -238,11 +207,11 @@ function generateMacRank() {
                   default: 
                     {
                         rankImgSrc = "assets/img/defaultRank.png";
-                        color = "text-info";
+                        color = "text-light";
                     }
               }
               macRankCard.innerHTML = `
-                  <div class="text-light normalRankItem d-flex flex-row justify-content-around align-items-center normalRankBg px-2 py-1 my-3">
+                  <div class="text-light normalRankItem d-flex flex-row justify-content-around align-items-center normalRankBg px-2 py-1 my-3 bg-secondary">
                   <p class="rank my-auto h3 en-iceberg p-0 m-0 ${color}">#${data[i].rank}</p>
                   <img src="${rankImgSrc}" class="normalRankPic"></img>
                   <p class="normalRankName my-auto text-nowrap">${data[i].studentName}</p>
