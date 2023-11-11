@@ -45,8 +45,8 @@ footer{
     height: 100vh;
 }
 
-.M{
-    color: wheat;
+/* .M{
+    color:rgb(118, 5, 223);
 }
 
 .U{
@@ -54,8 +54,8 @@ footer{
 }
 
 .Learn{
-    color: white;
-}
+    color: rgb(0, 0, 0);
+} */
 
 
 .score{
@@ -114,8 +114,7 @@ footer{
 }
 
 .firstRankPic{
-    height: 100px;
-    width: auto;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -160,12 +159,43 @@ footer{
     scroll-behavior: smooth;
     scrollbar-width:none;
     scrollbar-color: transparent;
+    border-top-right-radius: 20px;
 }
 
-#rankList::-webkit-scrollbar {
+.no-scrollbar::-webkit-scrollbar {
     width: 5px;
 }
 
-#rankList::-webkit-scrollbar-thumb {
+.no-scrollbar::-webkit-scrollbar-thumb {
     width: 5px;
+}
+
+.top-1{
+    position: relative !important;
+    top: -30px;
+}
+
+.top-1 {
+    scale: 1.3;
+}
+
+.top-side{
+    position: relative;
+    bottom: 0;
+}
+
+#top10Div div{
+    height: fit-content;
+}
+
+#top10Div{
+    height: fit-content;
+}
+
+#mulearnLink{
+    font-size: 2rem;
+}
+
+#mulearnLink:hover{
+    background-color: none;
 }

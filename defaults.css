@@ -1,5 +1,14 @@
 /* This file contains all the default css I uses in my web projects */
 
+/* webkit */
+.no-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.no-scrollbar::-webkit-scrollbar-thumb {
+  width: 5px;
+}
+
 /* widths */
 .wd-100{
     width: 100vw;

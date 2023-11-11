@@ -20,56 +20,56 @@
     <link rel="shortcut icon" href="assets/img/favIcon.png" type="image/x-icon">
     <title>μLearn @ MAC: LeaderBoard</title>
   </head>
-  <body class="bg-dark">
-    <img class="bg-img-body" src="assets/img/bg-1.jpg" alt="" />
+  <body class="bg-light no-scrollbar">
+    <img class="bg-img-body" src="assetss/img/bg-1.jpg" alt="" />
 
-    <div class="container-fluid">
+    <div class="">
       <div class="hero">
-        <p class="text-center h1 en-iceland p-0 text-nowrap">
-          <span class="M">M</span><span class="U">U</span>
-          <span class="Learn">Learn</span>
-        </p>
-
-        <p class="text-nowrap en-sirin p text-center ls-2 text-light">
-          <span class="M">ME</span> and <span class="U">YOU </span> <br class="d-md-none">
-          <span class="Learn">Learning TOGETHER</span>
-        </p>
-
-        <div class="External text-center">
-          <a href="https://gtechindia.org/" class="btn btn-outline-info px-5 m-0 border-0">GTech</a>
-          <a href="https://mulearn.org/" class="btn btn-outline-danger px-5 m-0 border-0">μLearn</a>
-          <a href="https://mac.edu.in/" class="btn btn-outline-warning px-5 m-0 border-0">MAC</a>
-      </div>
+        <div class="External text-nowrap d-flex flex-row justify-content-between mt-1">
+            <a href="https://gtechindia.org/" class="btn btn-outline-info px-4 m-0 border-0">GTech</a>
+            <a href="https://mulearn.org/" class="btn btn-outline-danger px-4 m-0 border-0 bg-transparent text-danger" id="mulearnLink">μLearn</a>
+            <a href="https://mac.edu.in/" class="btn btn-outline-warning px-4 m-0 border-0">MAC</a>
+        </div> 
       </div>
 
       <p class="h2 text-center text-primary en-iceberg pt-3 text-info ">
         MAC Leader Board
       </p>
-      <hr class="bg-info" />
+      <hr class="bg-info p-0"/>
 
-      <div class="d-flex flex-row overflow-auto rankTopDiv" id="top10Div">
-        <!-- <img src="assets/img/loadingGif.gif" alt="" class="swipeRight">
-        <img src="assets/img/loadingGif.gif" alt="" class="swipeLeft"> -->
-  
-  <!-- Top 10 End -->
+      
+
+    <!-- leaderboardItem -->
+    <div id="leaderBoard">
+        <div class="d-flex flex-row rankTopDiv text-dark mt-5 pt-3 container en-sirin fw-100 mt-4" id="top10Div">
+            
+            
+      
+          <!-- Top 10 End -->
+            </div>
+        
+            <div class="en-Oxanium hd-100 bg-info no-scrollbar" id="rankList">
+        
+            <div class=""></div>
+        
+                
+          <!-- ranklist end -->        
+            </div>
     </div>
+  <!-- leaderboardItem End -->
 
-      <div class="en-Oxanium p" id="rankList">
-    <!-- ranklist end -->
-      </div>
-  
   <!-- Main Container end -->
   </div>
 
   <div class="checkRank text-center">
-    <p class="h4 strong text-primary op-06 mt-5 en-iceland">Know Your Rank</p>
-      <input class="my-auto mx-auto en-Oxanium" type="text" id="macRankId" placeholder="Enter Your MuId"> <button class="btn btn-outline-success" onclick="generateMacRank()">GET</button>
+    <p class="h4 strong text-danger op-06 mt-5 en-iceland">Know Your Rank</p>
+      <input class="my-auto mx-auto en-Oxanium" type="text" id="macRankId" placeholder="Enter Your MuId"> <button class="btn btn-outline-danger" onclick="generateMacRank()">GET</button>
       <div id="macRankCard"></div>
   </div>
 
   <!-- footer -->
       <div class="footer mx-auto">
-        <p class="h5 ft-txt text-center text-success fw-200 en-sirin mt-3">An Initiative By Team <span class="text-secondary">μLearn @ MAC</span>
+        <p class="p ft-txt text-center text-secondary fw-200 en-sirin mt-3">An Initiative By Team <span class="text-danger">μLearn @ MAC</span>
         </p>
       </div>
     </div>
