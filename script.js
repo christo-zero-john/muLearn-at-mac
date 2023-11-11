@@ -35,17 +35,17 @@ function assignData(Data) {
   switch(data[0].rank){
     case 1:{
       var rankImgSrc1 = "assets/img/firstCrown.png"; 
-      var color1 = "text-warning";
+      var color1 = "text-first";
       break;
     }
     case 2:{
       var rankImgSrc1 = "assets/img/secondCrown.png"; 
-      var color1 = "text-silver";
+      var color1 = "text-second";
       break;
     }
     case 3:{
       var rankImgSrc1 = "assets/img/thirdCrown.png"; 
-      var color1 = "text-bronze";
+      var color1 = "text-third";
       break;
     }
     default:{
@@ -58,17 +58,17 @@ function assignData(Data) {
   switch(data[1].rank){
     case 1:{
       var rankImgSrc2 = "assets/img/firstCrown.png"; 
-      var color2 = "text-warning";
+      var color2 = "text-first";
       break;
     }
     case 2:{
       var rankImgSrc2 = "assets/img/secondCrown.png"; 
-      var color2 = "text-silver";
+      var color2 = "text-second";
       break;
     }
     case 3:{
       var rankImgSrc2 = "assets/img/thirdCrown.png"; 
-      var color2 = "text-bronze";
+      var color2 = "text-third";
       break;
     }
     default:{
@@ -81,17 +81,17 @@ function assignData(Data) {
   switch(data[2].rank){
     case 1:{
       var rankImgSrc3 = "assets/img/firstCrown.png"; 
-      var color3 = "text-warning";
+      var color3 = "text-first";
       break;
     }
     case 2:{
       var rankImgSrc3 = "assets/img/secondCrown.png"; 
-      var color3 = "text-silver";
+      var color3 = "text-second";
       break;
     }
     case 3:{
       var rankImgSrc3 = "assets/img/thirdCrown.png"; 
-      var color3 = "text-bronze";
+      var color3 = "text-third";
       break;
     }
     default:{
@@ -130,20 +130,20 @@ function assignData(Data) {
       {
           case 1: 
             {
-                rankImgSrc = "assets/img/firstCrown.png"; color = "text-warning";
+                rankImgSrc = "assets/img/firstCrown.png"; color = "text-first";
                 break;
                 
             }
           case 2:
             {
-              rankImgSrc = "assets/img/secondCrown.png"; color = "text-silver";
+              rankImgSrc = "assets/img/secondCrown.png"; color = "text-second";
               break;
               
             }
           case 3:
             {
               rankImgSrc = "assets/img/thirdCrown.png"; 
-              color = "text-bronze";
+              color = "text-third";
               break;   
             }
           default: 
@@ -154,7 +154,7 @@ function assignData(Data) {
         }
           rankList.innerHTML = rankList.innerHTML + 
           `
-            <div class="text-light normalRankItem d-flex flex-row justify-content-between align-items-center normalRankBg px-2 py-1">
+            <div class="text-light normalRankItem d-flex flex-row justify-content-between align-items-center normalRankBg px-2 py-1 hover-scale-2">
             <span class="d-flex flex-row justify-content-center align-items-center">
                     <p class="rank my-auto h3 en-iceberg p-0 m-0 ${color} mr-4">#${data[i].rank} </p>
                     <img src="${rankImgSrc}" class="normalRankPic">
@@ -190,20 +190,20 @@ function generateMacRank() {
               switch(data[i].rank){
                   case 1: 
                   {
-                      rankImgSrc = "assets/img/firstCrown.png"; color = "text-warning";
+                      rankImgSrc = "assets/img/firstCrown.png"; color = "text-first";
                       break;
                       
                   }
                   case 2:
                     {
-                      rankImgSrc = "assets/img/secondCrown.png"; color = "text-silver";
+                      rankImgSrc = "assets/img/secondCrown.png"; color = "text-second";
                       break;
                       
                     }
                   case 3:
                     {
                       rankImgSrc = "assets/img/thirdCrown.png"; 
-                      color = "text-bronze";
+                      color = "text-third";
                       break;   
                     }
                   default: 

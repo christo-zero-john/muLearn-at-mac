@@ -39,10 +39,11 @@ footer{
 .bg-img-body{
     position: fixed;
     z-index: -2;
-    opacity: 0.5;
+    opacity: 1;
     object-fit: cover;
     width: 100vw;
     height: 100vh;
+    filter: blur(2px);
 }
 
 /* .M{
@@ -132,16 +133,7 @@ footer{
     border: 2px ridge rgb(0, 0, 0);
 }
 
-.text-silver{
-    color: silver;
-}
-
-.text-bronze{
-    color: #cd7f32;
-}
-
 .normalRankBg{
-    background-color: #ffffff0e;
     border-bottom: 1px solid #fff;
 }
 
@@ -153,14 +145,15 @@ footer{
 }
 
 #rankList{
-    min-height: 0;
-    max-height: 80vh;
+    min-height: 0px;
+    max-height: 90vh;
     overflow-y: auto;
     scroll-behavior: smooth;
     scrollbar-width:none;
     scrollbar-color: transparent;
     border-top-right-radius: 20px;
-    background-color: rgba(1, 63, 57, 0.623);
+    background-color: #013f324f;
+    box-shadow: 0 -2px 15px 1px #00000073;
 }
 
 .no-scrollbar::-webkit-scrollbar {
@@ -199,4 +192,24 @@ footer{
 
 #mulearnLink:hover{
     background-color: none;
+}
+
+.text-first{
+    color:  #e01129;
+}
+
+.text-second{
+    color: #2F4F4F;
+}
+
+.text-third{
+    color: #B87333;
+}
+
+.hover-scale-2{
+    scale: 0.9;
+    transition: all 0.7s;
+}
+.hover-scale-2:hover{
+    scale: 1;
 }
