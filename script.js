@@ -155,8 +155,10 @@ function assignData(Data) {
           rankList.innerHTML = rankList.innerHTML + 
           `
             <div class="text-light normalRankItem d-flex flex-row justify-content-between align-items-center normalRankBg px-2 py-1">
-            <p class="rank my-auto h3 en-iceberg p-0 m-0 ${color}">#${data[i].rank}</p>
-            <img src="${rankImgSrc}" class="normalRankPic"></img>
+            <span class="d-flex flex-row justify-content-center align-items-center">
+                    <p class="rank my-auto h3 en-iceberg p-0 m-0 ${color} mr-4">#${data[i].rank} </p>
+                    <img src="${rankImgSrc}" class="normalRankPic">
+                  </span>
             <p class="normalRankName my-auto text-nowrap">${data[i].studentName}</p>
             <p class="normalRankScore my-auto">${data[i].MACscoreToday}</p>
           </div>
@@ -211,12 +213,15 @@ function generateMacRank() {
                     }
               }
               macRankCard.innerHTML = `
-                  <div class="text-light normalRankItem d-flex flex-row justify-content-around align-items-center normalRankBg px-2 py-1 my-3 bg-secondary">
-                  <p class="rank my-auto h3 en-iceberg p-0 m-0 ${color}">#${data[i].rank}</p>
-                  <img src="${rankImgSrc}" class="normalRankPic"></img>
+                  <div class="text-light normalRankItem d-flex flex-row justify-content-between align-items-center normalRankBg px-2 py-1 my-3 bg-secondary">
+                  <span class="d-flex flex-row justify-content-center align-items-center">
+                    <p class="rank my-auto h3 en-iceberg p-0 m-0 ${color} mr-3">#${data[i].rank} </p>
+                    <img src="${rankImgSrc}" class="normalRankPic"></img>
+                  </span>
                   <p class="normalRankName my-auto text-nowrap">${data[i].studentName}</p>
                   <p class="normalRankScore my-auto">${data[i].MACscoreToday}</p>
-              </div>`;
+              </div>
+            `;
               flag = 1;
               break;
           }

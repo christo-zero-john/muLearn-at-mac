@@ -160,6 +160,7 @@ footer{
     scrollbar-width:none;
     scrollbar-color: transparent;
     border-top-right-radius: 20px;
+    background-color: rgba(1, 63, 57, 0.623);
 }
 
 .no-scrollbar::-webkit-scrollbar {
