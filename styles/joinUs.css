@@ -67,3 +67,13 @@
     display: block;
     margin: auto;
 }
+
+.whatsapp{
+    width: 500px;
+    height: inherit;
+    background-color: black;
+}
+
+#rqBt{
+    cursor: pointer;
+}

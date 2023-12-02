@@ -11,19 +11,21 @@
 
     <link rel="icon" href="assets/img/favIcon.png">
 
-    <script src="components.js"></script>
+    
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join Us</title>
 </head>
-<body class="pb-5 mb-4 en-Oxanium">
+<body class="pb-5 mb-4 en-Oxanium no-scrollbar">
 
     <div class="hero text-center mb-5 ">
         <h1 class="display-1 pt-5">Join Us</h1>
         <p class="">And Make Yourself a better you</p>
-        <marquee class="small text left text-nowrap">If you are still not in muLearn community whatsapp group of MAC Ramapuram <br> </marquee>
-        <a class="link-primary">Request To Join</a>
+        <marquee class="small text left text-nowrap">If you are still not in muLearn whatsapp group of MAC Ramapuram <br> </marquee>
+        <span class="link-primary h5 rqBt" onclick="requestToJoin()">Request To Join</span>
+
+        <div class="pt-3" id="requestDiv"></div>
     </div>
     <hr>
     
@@ -40,7 +42,7 @@
 
                 
            
-        </div>
+    </div>
 <!-- Accordian Start -->
         <div class="accordion accordion-flush" id="accordionFlushExample">  
             <!-- collapse all accordions -->
@@ -345,11 +347,19 @@
         </div>
     </div>
 
-<div id="footer"></div>
+
     <script>
         function noBro(){
             document.getElementById("noBro").classList += "d-block";
         }
+
+        function requestToJoin(){
+        document.getElementById("requestDiv").innerHTML = `
+            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=919495806285&text=Hello%2C%0AI%20want%20to%20join%20muLearn%20whatsapp%20group.%20"> Christo John</a>
+
+            <a class="btn btn-danger" href="https://api.whatsapp.com/send?phone=919188785036&text=Hello%2C%0AI%20want%20to%20join%20muLearn%20whatsapp%20group.%20"> Binnet Binoy</a>
+        `
+        }   
     </script>
     
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
