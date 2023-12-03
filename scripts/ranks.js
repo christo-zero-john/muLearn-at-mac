@@ -452,17 +452,19 @@ function assignKarma(Data) {
                 color = "text-light";
             }
         }
-          rankList.innerHTML = rankList.innerHTML + 
-          `
-            <div class="text-light normalRankItem d-flex flex-row justify-content-between align-items-center normalRankBg px-2 py-1 hover-scale-2">
-            <span class="d-flex flex-row justify-content-center align-items-center">
-                    <p class="rank my-auto h3 en-iceberg p-0 m-0 ${color} mr-4">#${data[i].rank} </p>
-                    <img src="${rankImgSrc}" class="normalRankPic">
-                  </span>
-            <p class="normalRankName my-auto text-nowrap">${data[i].Name}</p>
-            <p class="normalRankScore my-auto">${data[i].Karma}</p>
-          </div>
-          `
+        if(data[i].Karma > 20){
+            rankList.innerHTML = rankList.innerHTML + 
+            `
+              <div class="text-light normalRankItem d-flex flex-row justify-content-between align-items-center normalRankBg px-2 py-1 hover-scale-2">
+              <span class="d-flex flex-row justify-content-center align-items-center">
+                      <p class="rank my-auto h3 en-iceberg p-0 m-0 ${color} mr-4">#${data[i].rank} </p>
+                      <img src="${rankImgSrc}" class="normalRankPic">
+                    </span>
+              <p class="normalRankName my-auto text-nowrap">${data[i].Name}</p>
+              <p class="normalRankScore my-auto">${data[i].Karma}</p>
+            </div>
+            `
+        }
     }
     checkRank.innerHTML = `
         <p class="h4 strong text-danger op-06 mt-5 en-iceland">Know Your Rank</p>
