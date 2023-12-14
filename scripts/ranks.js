@@ -148,6 +148,7 @@ function displayRank(x){
 displayRank(1);
 
 function assignData(Data) {
+  console.log(Data)
   rankList.innerHTML ="";
   top10Div.innerHTML = "";
   var data = Data;
