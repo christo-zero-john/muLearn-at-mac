@@ -40,7 +40,7 @@ function initialize(x){
                         </p>
                     </div>
 
-                    <a href="##" class="d-block small text-left text-danger" id="" onclick="redirectTo('${tasks[x].link}','${x}')"><img class="discordImg" src="https://img.shields.io/badge/View%20on%20discord-discord?style=social&logo=discord&logoColor=%23ff0000&color=%23ffffff
+                    <a href="##" class="d-block small text-left text-danger" id="" onclick="redirectTo('${tasks[x].link}','${x}')"><img class="discordImg" src="https://img.shields.io/badge/View%20on%20discord-discord?style=social&logo=discord&logoColor=%230f00ff&color=%23bfdfcc
                     " alt="click to view task on discord" id="discordLink"></a>
                 </div>
             </div>
