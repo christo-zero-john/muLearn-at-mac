@@ -19,26 +19,29 @@ function initialize(x){
         console.log(tasks)
         for(x in tasks){
                 content += `
-            <div class="d-flex flex-row justify-content-center align-items-center mx-3 my-2 box-shadow py-3 taskItem" id="">
+            <div class="col-md-5 d-flex flex-row justify-content-center align-items-center mx-1 mx-md-3 my-2 box-shadow py-3 taskItem" id="">
                 <img class="col-3 taskItemImg op-07" src="https://learn.mulearn.org/static/media/freecodecamp.080636d05280aa48d82c43b7ad4ba83e.svg" alt="">
                 <div class="col-8 d-block" id="task">
-                    <p class="h3 text-center" id="title">${tasks[x].title}</p>
+                    <p class="h5 text-center" id="title">${tasks[x].title}</p>
+                    <hr>
 
-                    <p class="hashtag p-1 small" id="">${tasks[x].hashtag}</p>
+                    <p class="hashtag p-1 badge badge-light text-dark" id="">
+                    ${tasks[x].hashtag}</p>
 
-                    <p class="description" id="">${tasks[x].description}</p>
+                    <p class="description small" id="">${tasks[x].description}</p>
 
-                    <div id="" class="text-center">
-                        <p class="btn macScore p-0 col-5" id="">
+                    <div id="" class="text-dark">
+                        <p class="badge p-0 col-5 text-left text-dark" id="">
                             <img class="op-09" src="/assets/img/macScoreImg.png" alt="" id="macScoreImg">
                             ${tasks[x].macScore}</p>
-                        <p class="small btn karmaPoints p-0 col-5" id="">
+                        <p class="badge badge-light p-0 col-5 text-left" id="">
                             <img class="op-09" src="/assets/img/karmaPoints.svg" alt="" id="karmaPointsImg">
-                            <span class="my-3 small" id="">${tasks[x].karma}</span>
+                            <span class="my-3 text-dark" id="">${tasks[x].karma}</span>
                         </p>
                     </div>
 
-                    <a href="##" class="d-block small text-center" id="" onclick="redirectTo('${tasks[x].link}','${x}')"><img class="img-fluid wd-10" src="https://app.mulearn.org/assets/discordicon-26d0c26a.webp" alt="" id="discordLink"><span class="">View in Discord</span></a>
+                    <a href="##" class="d-block small text-left text-danger" id="" onclick="redirectTo('${tasks[x].link}','${x}')"><img class="discordImg" src="https://img.shields.io/badge/View%20on%20discord-discord?style=social&logo=discord&logoColor=%23ff0000&color=%23ffffff
+                    " alt="click to view task on discord" id="discordLink"></a>
                 </div>
             </div>
           `
