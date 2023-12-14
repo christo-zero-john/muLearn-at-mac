@@ -1,3 +1,21 @@
+header{
+    width: 100%;
+    height: 65vh;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGJbv5olVsph2PLHx0YBN2CnALP3ealECwpFBDLa2FJtj-bzLj&s);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header p:hover{
+    color: rgb(102, 0, 255);
+    transform: scale(1.2);
+}
+
+header p{
+    transition: all 0.5s;
+}
+
 .taskItem{
     background-color: antiquewhite;
     border-radius: 5px;
