@@ -57,7 +57,7 @@ function redirectTo(x, y){
         modalBody.innerHTML = `
         <div id="">
             <p class="fs-4" id="">${tasks[y].title}</p>
-            <p class="p" id="">${tasks[y].title} is not a Discord task. This task is created by Mar. Augusthinose college and is only applicable for students of our college. All tasks with hashtag starting with <mark>#mac</mark> is created by our college. Also these tasks does not have any karma points as they are not from official mulearn.</p> <br>
+            <p class="p" id="">${tasks[y].title} is not a Discord task. This task is created by Mar Augusthinose college campus chapter and is only applicable for students of our college. All tasks with hashtag starting with <mark>#mac</mark> is created by our college. Also these tasks does not have any karma points as they are not from official mulearn. We implemented <mark>MAC SCORE </mark> as a scoring system for tasks from our college.</p> <br>
 
             <div id="" class="card p-3 bg-secondary text-light">
                 <p class="" id="">Task Name: ${tasks[y].title}</p>
