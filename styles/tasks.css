@@ -1,0 +1,36 @@
+.taskItem{
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+#macScoreImg, #karmaPointsImg{
+    height: 30px;
+}
+
+#karmaPointsImg{
+    border-radius: 5px;
+}
+
+
+
+.macScore, .karmaPoints{
+    border-radius: 5px;
+    background-color: rgb(121, 207, 204);
+    border: 1px solid black;
+    display: inline;
+    padding-right: 20px;
+}
+
+.karmaPoints{
+    background-color: rgba(255, 166, 0, 0.441) !important;
+}
+
+.macScore{
+    background-color: rgba(0, 166, 255, 0.441) !important;
+}
+
+.hashtag{
+    background-color: aliceblue;
+    width: fit-content;
+    border-radius: 5px;
+}
