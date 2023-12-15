@@ -23,3 +23,7 @@ main{
     object-fit: cover;
     filter: blur(3px);
 } */
+
+.whoWeAreContent{
+    width: fit-content;
+}
