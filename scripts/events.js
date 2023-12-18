@@ -57,17 +57,19 @@ function popEventdetails(hashtag){
         if(activities[x].hashtag == hashtag){
             modalBody.innerHTML = `
                 <p class="eventTitle">
-                <span class="mark fw-600 fs-5"> Title</span> ${activities[x].title}</p>
+                <span class="mark fw-500 fs-5"> Title</span> ${activities[x].title}</p>
                 <p class="eventHashtag">
-                <span class="mark fw-600 fs-5"> Hashtag</span> ${activities[x].hashtag}</p>
+                <span class="mark fw-500 fs-5"> Hashtag</span> ${activities[x].hashtag}</p>
                 <p class="eventSource">
-                <span class="mark fw-600 fs-5"> Held By:</span> ${activities[x].source}</p>
+                <span class="mark fw-500 fs-5"> Held By:</span> ${activities[x].source}</p>
+                <p class="eventSource">
+                <span class=" mark fw-500 fs-5"> Type:</span> ${activities[x].type}</p>
                 <p class="eventDescription">
-                <span class="mark fw-600 fs-5"> Description: </span>${activities[x].description}</p>
+                <span class="mark fw-500 fs-5"> Description: </span>${activities[x].description}</p>
                 <p class="eventStartDate">
-                <span class="mark fw-600 fs-5"> Announced On:  </span>${activities[x].startedOn}</p>
+                <span class="mark fw-500 fs-5"> Announced On:  </span>${activities[x].startedOn}</p>
                 <p class="eventEndDate">
-                <span class="mark fw-600 fs-5"> End date: </span>${activities[x].deadline}</p>
+                <span class="mark fw-500 fs-5"> End date: </span>${activities[x].deadline}</p>
                 <kbd class="eventMacScore">MAC Score: ${activities[x].macScore}</kbd>
                 <kbd class="badge badge-dark eventKarmaPoints">Karma Points: ${activities[x].karmaPoints}</kbd>
                 
