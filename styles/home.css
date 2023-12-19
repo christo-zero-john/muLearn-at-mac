@@ -1,0 +1,365 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Adjust this value according to the height of your navbar */
+  }
+
+  /* Transparent Navbar */
+  .navbar {
+    background-color: transparent !important;
+    height: 80px; /* Adjust this value to make the navbar taller */
+  }
+
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    color: #2E85FE !important; /* Trusty Blue */
+    font-size: 1.5em; /* Adjust the font size as needed */
+  }
+
+  .navbar-brand img {
+    height: 40px; /* Adjust the height of the logo as needed */
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+
+  .navbar-brand:hover,
+  .navbar-nav .nav-link:hover {
+    color: #AF2EE6 !important; /* Duke Purple */
+  }
+
+  .navbar-toggler-icon {
+    background-color: #fff !important;
+  }
+
+  .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Semi-transparent black */
+  }
+  
+  .dropdown-item {
+    color: #AF2EE6 !important; /* Duke Purple */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #AF2EE6 !important; /* Duke Purple */
+    color: white !important;
+  }
+  
+  /* Hero Section */
+  section.hero {
+    height: 100vh; /* 100% of the viewport height */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/home.avif"); /* Replace with the correct path to your image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .hero-text h1 {
+    font-family: 'Gilroy', sans-serif; /* Use the Gilroy font */
+    font-size: 3em; /* Adjust the font size as needed */
+    color: #AF2EE6; /* Duke Purple */
+  }
+
+  .hero-text p {
+    font-size: 1.5em; /* Adjust the font size as needed */
+    color: #2E85FE; /* Trusty Blue */
+  }
+
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: #AF2EE6; /* Duke Purple */
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.2em; /* Adjust the font size as needed */
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .hero-text button:hover {
+    background-color: #AF2EE6; /* Duke Purple */
+    color: white;
+  }
+
+  /* Carousel Container */
+  /* Carousel Container */
+/* #myCarousel {
+    width: 100%;
+    height: 100%; /* Set the height of the carousel as needed 
+    /*margin-top: 50px;  Adjust margin-top to leave space for the navbar 
+  }
+  
+  /* Carousel Images 
+  .carousel-item {
+    height: 100%;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the entire carousel item 
+  }
+  
+  /* Carousel Caption Styles *
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Set the text color 
+  }
+  
+  .carousel-caption h5 {
+    font-size: 2em; /* Adjust heading font size 
+  }
+  
+  .carousel-caption p {
+    font-size: 1.2em; /* Adjust paragraph font size 
+  }
+  
+  /* Carousel Controls Styles 
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #000; /* Set the color of the control icons 
+  }
+  
+  .carousel-control-prev-icon:before,
+  .carousel-control-next-icon:before {
+    color: #fff; /* Set the color of the control icons 
+  }
+  
+  /* Optional: Add hover effects to controls 
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Set the background color on hover 
+  }
+  */
+  .carousel-caption {
+    text-align: center;
+  }
+  
+  
+  .container {
+    width: 100vw; /* Set container width to viewport width */
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2em; /* Increase h1 font size */
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .text {
+    width: 100%; /* Adjust width for smaller screens */
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 1.2em; /* Increase text font size */
+  }
+  
+  .image {
+    width: 100%; /* Adjust width for smaller screens */
+    margin-top: 20px; /* Add some space between text and image */
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  @media screen and (min-width: 768px) {
+    /* Apply these styles only on screens wider than 768px */
+    .text {
+      width: 50%;
+    }
+  
+    .image {
+      width: 40%;
+      margin-top: 0; /* Remove margin on larger screens */
+    }
+  }
+
+  /* Animation for the counter items */
+  @keyframes counterAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+    .counter-item {
+       animation: counterAnimation 3s ease-out; 
+  }
+  
+  /* Counter Section */
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .counter-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('images/ctr.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 168px; /* Set the desired height */
+  }
+  
+  .counter-item {
+    flex: 1;
+    text-align: center;
+    color: white;
+    margin: 10px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 24px;
+    margin: 0;
+  }
+
+/*about*/
+.about-container {
+    width: 100vw; /* Set container width to viewport width */
+    background-color: #f4f4f4;
+    /*padding: 10px; */
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2em; /* Increase h1 font size */
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .text {
+    width: 100%; /* Adjust width for smaller screens */
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 1.2em; /* Increase text font size */
+  }
+  
+  .image {
+    width: 100%; /* Adjust width for smaller screens */
+    margin-top: 20px; /* Add some space between text and image */
+    padding-right: 8px;
+    padding-bottom: 5px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: 100vh;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  @media screen and (min-width: 768px) {
+    /* Apply these styles only on screens wider than 768px */
+    .text {
+      width: 50%;
+    }
+  
+    .image {
+      width: 40%;
+      margin-top: 0; /* Remove margin on larger screens */
+    }
+  }
+
+  .campusch-container {
+    width: 100vw; /* Set container width to viewport width */
+    background-color: #f4f4f4;
+    /*padding: 10px; */
+    box-sizing: border-box;
+  }
+ 
+/* FAQ Section */
+section.faq {
+    position: relative;
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .faq-header {
+    position: relative;
+    background: url('images/b50affd3718ca93ad089217afbbb74fc-2107974588.jpg') center/cover no-repeat; /* Replace with your image URL */
+    padding: 20px;
+  }
+  
+  .faq-header h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white; /* Set the text color to make it visible on the image background */
+  }
+  
+  .faq-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-item h3 {
+    font-size: 1.5em;
+    cursor: pointer; /* Add cursor pointer for clickable effect */
+  }
+  
+  .answer {
+    display: none;
+    margin-top: 10px;
+  }
+  
+  /* Reset some default styles */
+  body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
