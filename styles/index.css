@@ -1,0 +1,29 @@
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/img/index/headerImg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    background-image: url(/assets/img/index/mainBg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* .headerImg{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    object-fit: cover;
+    filter: blur(3px);
+} */
+
+.whoWeAreContent{
+    width: fit-content;
+}

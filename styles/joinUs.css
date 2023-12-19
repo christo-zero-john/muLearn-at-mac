@@ -1,0 +1,85 @@
+/* .stepNumber{
+    
+}
+
+.stepItem{
+    margin: 30px 0;
+}
+
+
+.step .stepItem{
+    text-align: center;
+}
+
+.step .stepItem span{
+    line-height: 2rem;
+}
+
+.Sub{
+    background-color: wheat;
+    border-radius: 10px;
+    line-height: 2rem;
+}
+
+.stepNumberSub{
+    color: red;
+    padding: 0 10px;
+    border: 1px ridge black;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+.stepSub{
+    color: green;
+}
+
+ */
+
+
+
+.exImg{
+    width: 80%;
+    display: block;
+    margin:auto;
+}
+
+.acceptRulesImg{
+    max-height: 70vh;
+    overflow-y: auto;
+    width: fit-content;
+    max-width: 80vw;
+    margin: auto;
+
+}
+
+.collapse-all{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    bottom:1%;
+    width: 100%;
+    height: fit-content;
+}
+
+.joinUsIntroVideo{
+    width: 90vw;
+    height: 50vw;
+    display: block;
+    margin: auto;
+}
+
+.whatsapp{
+    width: 500px;
+    height: inherit;
+    background-color: black;
+}
+
+#rqBt{
+    cursor: pointer;
+}
+
+.whatsapp{
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+}

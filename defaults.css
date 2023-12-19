@@ -1,4 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Iceland&family=Oxanium:wght@200;300;400;500;600;700;800&family=Sirin+Stencil&display=swap');
+
 /* This file contains all the default css I uses in my web projects */
+
+/* webkit */
+.no-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.no-scrollbar::-webkit-scrollbar-thumb {
+  width: 5px;
+}
+
+
+
+
+/* fonts */
+.en-iceberg{
+    font-family: 'Iceberg', sans-serif;
+}
+
+.en-iceland{
+    font-family: 'Iceland', sans-serif;
+}
+
+.en-Oxanium{
+    font-family: 'Oxanium', sans-serif;
+}
+
+.en-sirin{
+    font-family: 'Sirin Stencil', sans-serif;
+}
 
 /* widths */
 .wd-100{
@@ -54,11 +85,71 @@
     width: 90vw;
   }
   
-  
   .w-fit{
     width: fit-content !important;
   }
-  
+
+
+/* min-width */
+.mwd-100{
+  min-width: 100vw;
+}
+
+.mwd-75{
+  min-width: 75vw;
+}
+
+.mwd-50{
+  min-width: 50vw;
+}
+
+.mwd-25{
+  min-width: 25vw;
+}
+
+.mwd-10{
+  min-width: 10vw;
+}
+
+
+.mwd-20{
+  min-width:20vw;
+}
+
+.mwd-30{
+  min-width: 30vw;
+}
+
+.mwd-40{
+  min-width: 40vw;
+}
+
+.mwd-50{
+  min-width: 50vw;
+}
+
+.mwd-60{
+  min-width: 60vw;
+}
+
+.mwd-70{
+  min-width: 70vw;
+}
+
+.mwd-80{
+  min-width: 80vw;
+}
+
+.mwd-90{
+  min-width: 90vw;
+}
+
+
+.mw-fit{
+  min-width: fit-content !important;
+}
+
+
   /* heights */
   .hd-100{
     height: 100vh;
@@ -116,117 +207,181 @@
     height: fit-content;
   }
   
-  
-  /* font-weights */
-  .fw-100{
-      font-weight: 100 !important;
-  }
-  .fw-200{
-      font-weight: 200 !important;
-  }
-  .fw-300{
-      font-weight: 300 !important;
-  }
-  .fw-400{
-      font-weight: 400 !important;
-  }
-  .fw-500{
-      font-weight: 500 !important;
-  }
-  .fw-600{
-      font-weight: 600 !important;
-  }
-  .fw-700{
-      font-weight: 700 !important;
-  }
-  .fw-800{
-      font-weight: 800 !important;
-  }
-  .fw-900{
-      font-weight: 900 !important;
-  }
-  .fw-1000{
-      font-weight: 1000 !important;
-  }
-  
-  /* opacity */
-  .op-1{
-    opacity: 1;
-  }
-  
-  .op-09{
-    opacity: 0.9;
-  }
-  
-  .op-08{
-    opacity: 0.8;
-  }
-  
-  .op-07{
-    opacity: 0.7;
-  }
-  
-  .op-06{
-    opacity: 0.6;
-  }
-  
-  .op-05{
-    opacity: 0.5;
-  }
-  
-  .op-04{
-    opacity: 0.4;
-  }
-  
-  .op-03{
-    opacity: 0.3;
-  }
-  
-  .op-02{
-    opacity: 0.2;
-  }
-  
-  .op-01{
-    opacity: 0.1;
-  }
 
-    /* letter spacing */
-    .ls-1{
-      letter-spacing: 1;
-    }
-    
-    .ls-09{
-      letter-spacing: 0.9;
-    }
-    
-    .ls-08{
-      letter-spacing: 0.8;
-    }
-    
-    .ls-07{
-      letter-spacing: 0.7;
-    }
-    
-    .ls-06{
-      letter-spacing: 0.6;
-    }
-    
-    .ls-05{
-      letter-spacing: 0.5;
-    }
-    
-    .ls-04{
-      letter-spacing: 0.4;
-    }
-    
-    .ls-03{
-      letter-spacing: 0.3;
-    }
-    
-    .ls-02{
-      letter-spacing: 0.2;
-    }
-    
-    .ls-01{
-      letter-spacing: 0.1;
-    }
+
+/* min-height */
+.mhd-100{
+  min-height: 100vh;
+}
+
+.mhd-75{
+  min-height: 75vh;
+}
+
+.mhd-50{
+  min-height: 50vh;
+}
+
+.mhd-25{
+  min-height: 25vh;
+}
+
+.mhd-10{
+  min-height: 10vh;
+}
+
+.mhd-20{
+  min-height:20vh;
+}
+
+.mhd-30{
+  min-height: 30vh;
+}
+
+.mhd-40{
+  min-height: 40vh;
+}
+
+.mhd-50{
+  min-height: 50vh;
+}
+
+.mhd-60{
+  min-height: 60vh;
+}
+
+.mhd-70{
+  min-height: 70vh;
+}
+
+.mhd-80{
+  min-height: 80vh;
+}
+
+.mhd-90{
+  min-height: 90vh;
+}
+
+.mh-fit{
+  min-height: fit-content;
+}
+
+  
+/* font-weights */
+.fw-100{
+    font-weight: 100 !important;
+}
+.fw-200{
+    font-weight: 200 !important;
+}
+.fw-300{
+    font-weight: 300 !important;
+}
+.fw-400{
+    font-weight: 400 !important;
+}
+.fw-500{
+    font-weight: 500 !important;
+}
+.fw-600{
+    font-weight: 600 !important;
+}
+.fw-700{
+    font-weight: 700 !important;
+}
+.fw-800{
+    font-weight: 800 !important;
+}
+.fw-900{
+    font-weight: 900 !important;
+}
+.fw-1000{
+    font-weight: 1000 !important;
+}
+
+
+
+
+/* opacity */
+.op-1{
+  opacity: 1;
+}
+
+.op-09{
+  opacity: 0.9;
+}
+
+.op-08{
+  opacity: 0.8;
+}
+
+.op-07{
+  opacity: 0.7;
+}
+
+.op-06{
+  opacity: 0.6;
+}
+
+.op-05{
+  opacity: 0.5;
+}
+
+.op-04{
+  opacity: 0.4;
+}
+
+.op-03{
+  opacity: 0.3;
+}
+
+.op-02{
+  opacity: 0.2;
+}
+
+.op-01{
+  opacity: 0.1;
+}
+
+
+
+/* letter spacing */
+.ls-1{
+  letter-spacing: 1;
+}
+
+.ls-09{
+  letter-spacing: 0.9;
+}
+
+.ls-08{
+  letter-spacing: 0.8;
+}
+
+.ls-07{
+  letter-spacing: 0.7;
+}
+
+.ls-06{
+  letter-spacing: 0.6;
+}
+
+.ls-05{
+  letter-spacing: 0.5;
+}
+
+.ls-04{
+  letter-spacing: 0.4;
+}
+
+.ls-03{
+  letter-spacing: 0.3;
+}
+
+.ls-02{
+  letter-spacing: 0.2;
+}
+
+.ls-01{
+  letter-spacing: 0.1;
+}
