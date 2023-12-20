@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Iceland&family=Oxanium:wght@200;300;400;500;600;700;800&family=Sirin+Stencil&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 /* This file contains all the default css I uses in my web projects */
 
 /* webkit */
@@ -29,6 +33,11 @@
 
 .en-sirin{
     font-family: 'Sirin Stencil', sans-serif;
+}
+
+.en-mulearn{
+  font-family: 'Exo 2', sans-serif; 
+  font-style: italic;
 }
 
 /* widths */
