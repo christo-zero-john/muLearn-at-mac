@@ -1,0 +1,122 @@
+jQuery(document).ready(function () {
+  let isShowCollect = 1;
+  try {
+    isShowCollect = htmlConfig.bookConfig.isShowCollect ?? 1;
+  } catch (error) {
+    isShowCollect = 1;
+  }
+  if (!isShowCollect) return;
+
+  if(window.bookConfig && window.bookConfig.OnlyOpenInIframe && window.self === window.top ) return
+
+  let bookConfigPlugin = [];
+  try {
+    bookConfigPlugin =
+      window.htmlConfig && window.htmlConfig.plugin
+        ? window.htmlConfig.plugin
+        : [];
+  } catch (error) {
+    bookConfigPlugin = [];
+  }
+  var version = new Date().getTime();
+  var hrefStr = window.location.href;
+  var lastStr = window.location.pathname.split("/").pop();
+  var searchStr = window.location.search;
+  var hashStr = window.location.hash;
+  if (hrefStr.includes(searchStr)) hrefStr = hrefStr.replace(searchStr, "");
+  if (hrefStr.includes(lastStr)) hrefStr = hrefStr.replace(lastStr, "");
+  if (hrefStr.includes(hashStr)) hrefStr = hrefStr.replace(hashStr, "");
+  var url = hrefStr + "javascript/plugin.json" + "?" + version;
+  if (url.includes("articles")) url = url.replace("articles", "mobile");
+  $.ajax({
+    url: url,
+    type: "get",
+    crossDomain: true,
+    dataType: "json",
+    success: function (data) {
+      var plugin = data;
+      var localPlugin = bookConfigPlugin;
+      for (var i = 0; i < plugin.length; i++) {
+        for (var j = 0; j < localPlugin.length; j++) {
+          if (localPlugin.length > 0) {
+            if (plugin[i]["name"] === localPlugin[j]["name"]) {
+              localPlugin.splice(j, 1);
+            }
+          }
+        }
+      }
+      for (var n = 0; n < localPlugin.length; n++) {
+        plugin.push(localPlugin[n]);
+      }
+      loadingJs(plugin);
+    },
+    error: function () {
+      if (bookConfigPlugin && bookConfigPlugin.length !== 0)
+        loadingJs(bookConfigPlugin);
+    },
+  });
+  var loadingJs = function (data) {
+    var plugins = data;
+    if (typeof plugins == "object") {
+      for (var i = 0; i < plugins.length; i++) {
+        (function () {
+          var plugin = plugins[i];
+          if (plugin.src) {
+            loadJavascript(plugin.src + "?" + version, function () {
+              var config = plugin.config;
+              if (typeof config == "string") {
+                $.ajax({
+                  url: config + "?" + version,
+                  type: "get",
+                  crossDomain: true,
+                  dataType: "json",
+                  success: function (data) {
+                    var configs = data;
+                    if (plugin.action) configs.action = plugin.action;
+                    if (plugin.toServer) configs.toServer = plugin.toServer;
+                    config = configs;
+                    if (plugin.name && window[plugin.name])
+                      new window[plugin.name](config);
+                  },
+                });
+              } else {
+                if (plugin.name && window[plugin.name])
+                  new window[plugin.name](config);
+              }
+            });
+          }
+        })(i);
+      }
+    }
+  };
+
+  try {
+    if (window.self !== window.top) {
+      window.addEventListener(
+        "message",
+        function (e) {
+          var key = e.data.key;
+          var event = e.data.event;
+          var value = e.data.value;
+          if (key) {
+            switch (key) {
+              case "function":
+                if (window[event] && typeof window[event] == "function") {
+                  window[event](value);
+                }
+                break;
+              case "readAsFullscreen":
+                if (window.readAsFullscreen && typeof window.readAsFullscreen == "function") {
+                  readAsFullscreen();
+                }
+                break;
+              default:
+                break;
+            }
+          }
+        },
+        false
+      );
+    }
+  } catch (error) {}
+});

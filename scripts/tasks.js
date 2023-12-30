@@ -16,19 +16,17 @@ function initialize(x){
         tasks = x
         var content = "";
         x = 0;
-        console.log(tasks)
+        // console.log(tasks) https://learn.mulearn.org/static/media/freecodecamp.080636d05280aa48d82c43b7ad4ba83e.svg
         for(x in tasks){
                 content += `
             <div class="col-md-5 d-flex flex-row justify-content-center align-items-center mx-1 mx-md-3 my-2 box-shadow py-3 taskItem" id="">
-                <img class="col-3 taskItemImg op-07" src="https://learn.mulearn.org/static/media/freecodecamp.080636d05280aa48d82c43b7ad4ba83e.svg" alt="">
+                <img class=" col-3 taskItemImg img-fluid p-3 mx-2" src="${tasks[x].img}" alt="">
                 <div class="col-8 d-block" id="task">
                     <p class="h5 text-center" id="title">${tasks[x].title}</p>
                     <hr>
 
                     <p class="hashtag p-1 badge badge-light text-dark" id="">
                     ${tasks[x].hashtag}</p>
-
-                    <p class="description small" id="">${tasks[x].description}</p>
 
                     <div id="" class="text-dark">
                         <p class="badge p-0 col-5 text-left text-dark" id="">
@@ -40,7 +38,10 @@ function initialize(x){
                         </p>
                     </div>
 
-                    <img onclick="redirectTo('${tasks[x].link}','${x}')" class="discordImg" src="https://img.shields.io/badge/View%20on%20discord-discord?style=social&logo=discord&logoColor=%230f00ff&color=%23bfdfcc
+                    
+                    <img class=" img-fluid mx-1 infoImg" src="/assets/img/info.png" alt="" onclick="printTaskDetails('${tasks[x].hashtag}')">
+
+                    <img onclick="redirectTo('${tasks[x].link}','${x}')" class="mx-4 discordImg" src="https://img.shields.io/badge/View%20on%20discord-discord?style=social&logo=discord&logoColor=%230f00ff&color=%23bfdfcc
                     " alt="click to view task on discord" id="discordLink">
                 </div>
             </div>
@@ -50,8 +51,9 @@ function initialize(x){
     }
 
 function redirectTo(x, y){
+    // here x = task.link and y = index position of task
     console.log(x)
-    console.log(x)
+    console.log(y)
     if(x == 'nil'){
         modalDiv.show();
         modalBody.innerHTML = `
@@ -69,5 +71,35 @@ function redirectTo(x, y){
     }
     else{
         window.location.href = x;
+    }
+}
+
+function printTaskDetails(x){
+    // here x is hashtag of a task
+    getTaskByHashtag(x);
+}
+
+
+function getTaskByHashtag(x){
+    // here x is hashtag of a task
+    // console.log(tasks)
+    for(y in tasks){
+        if(tasks[y].hashtag == x){
+            modalDiv.show();
+            document.getElementById("modalTitle").innerHTML = tasks[y].title;
+            modalBody.innerHTML =`
+            <div id="">
+            <p class="fs-4" id="">${tasks[y].title}</p>
+            <p class="p" id="">${tasks[y].description}</p> <br>
+
+            <div id="" class="card p-3 bg-secondary text-light">
+                <p class="" id="">Task Name: ${tasks[y].title}</p>
+                <p class="" id="">Hashtag: ${tasks[y].hashtag}</p>
+                <p class="" id="">Mac Score: ${tasks[y].macScore}</p>
+                <p class="" id="">Karma Points: ${tasks[y].karma}</p>
+            </div>
+        </div>
+            `
+        }
     }
 }

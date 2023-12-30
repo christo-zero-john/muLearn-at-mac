@@ -1,0 +1,13 @@
+.nav-link:hover,.navbar-brand:hover{
+    color: darkorange;
+}
+  
+.nav-link,.navbar-brand{
+    transition: all
+    0.5s;
+}
+
+.nav-item{
+    padding:0 10px ;
+    
+}

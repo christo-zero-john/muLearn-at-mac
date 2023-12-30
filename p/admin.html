@@ -12,11 +12,14 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
-  <body class="d-flex flex-column justify-content-center align-items-center en-Oxanium py-4">
+  <body class="d-flex flex-column justify-content-center align-items-center en-Oxanium">
 
-<!-- accordion -->
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item wd-90 pb-3">
+    <!-- navbar (using js)-->
+    <div class="w-100 sticky-top" id="navBar"></div>
+
+<!-- How it Works? section -->
+    <div class="mt-5 accordion accordion-flush col-12" id="accordionFlushExample">
+        <div class="accordion-item w-100 pb-3">
           <h2 class="accordion-header" id="flush-headingOne">
             <button class="accordion-button collapsed alert alert-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                 <p class=" h4" id="">How it Works?</p>
@@ -79,6 +82,8 @@
     <table class="table px-5 text-center" id="printTaskTable"></table>
 
 
+    <div class="w-100" id="Footer"></div>
+
 <!-- jqwery -->
     <!-- <script src="jquery-3.7.1.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -91,7 +96,8 @@
     <script src="https://unpkg.com/stein-js-client"></script>
 <!-- myscript -->
     <script src="/scripts/admin.js"></script>
+    <!-- components -->
+    <script src="/scripts/components.js"></script>
+    <link rel="stylesheet" href="/styles/components.css">
   </body>
 </html>
-
-<p class="" id=""></p>

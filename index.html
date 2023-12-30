@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
-    <title>MAC-μLearn</title>
+    <meta name="description" content="Official Website of mulearn campus chapter at Mar Augusthinose college">
+
+
+    <link rel="shortcut icon" href="/assets/img/favIcon.png" type="image/x-icon">
+    <title>μLearn Campus Chapter: Mar Augusthinose college, Ramapuram</title>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
 
   <!-- my style -->
     <link rel="stylesheet" href="/styles/home.css">
@@ -14,101 +19,209 @@
 
     <link rel="icon" href="images/logo/mulearn-campus-logo.svg" type="image/x-icon">
 </head>
-<body class="en-Oxanium">
+<body class="p-0 m-0 en-Oxanium no-scrollbar">
 
 <!-- Navbar -->
-  <div class="navContainer bg-success py-1 sticky-top">
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/index.html">MULEARN</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <div class="sticky-top" id="navBar"></div>
 
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/index.html">Home</a>
-                  </li>
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/p/execom.html">Execom</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/ranks.html">Leaderboard</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/p/e/events.html">Events</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/joinus.html">Join Us</a>
-                  </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-  </div>
-
-
+<!-- hero -->
   <div class="d-flex flex-column justify-content-center align-items-center" id="hero">
     <img class="img-fluid w-50" src="https://mulearn.org/static/media/logo-white.c63142e01d66f3530e7eb4ee3937704e.svg" alt="">
-    <p class="display-6 en-sirin text-center text-info mt-3" id="">Mar Augusthinose College Campus Chapter </p>
+    <h1 class="display-6 en-sirin text-center text-info mt-3 title" id=""><span class="mac text-nowrap ts-normal-black">Mar Augusthinose College </span> <span class="cc text-nowrap text-orange ts-normal-black">Campus Chapter</span> </h1>
 
-    <p class=" fs-4 py-4 text-center text-success en-mulearn" id="">Let's Learn and Grow Together!</p>
+    <p class="en-mulearn fs-4 py-4 text-center text-wheat ts-normal-black " id="">Let's Learn and Grow Together!</p>
 
     <a class="en-iceland fs-4 btn btn-info " href="/joinus.html">Wanna Join Us!</a>
   </div>
 
   
 <!-- Counter Section -->
-<section class="counter text-light">
-  <div class="counter-container d-flex flex-row justify-content-start justify-content-md-center align-items-center overflow-auto no-scrollbar text-center">
-      <div class="en-mulearn mx-3 mt-3 counter-item text-nowrap w-fit" id="registeredUsers">
-        <p class="fs-4">Registered Users</p>
-        <p class="fs-4" id="registeredCount">0</p>
-      </div>
-    
-      <div class="en-mulearn mx-3 mt-3 counter-item text-nowrap w-fit" id="activeUsers">
-        <p class="fs-4">Active Users</p>
-        <p class="fs-4" id="activeCount">0</p>
-      </div>
-    
-      <div class="en-mulearn mx-3 mt-3 counter-item text-nowrap w-fit" id="karmaPoints">
-        <p class="fs-4">Karma Points</p>
-        <p class="fs-4" id="karmaCount">0</p>
-      </div>
-    
-      <div class="en-mulearn mx-3 mt-3 counter-item text-nowrap w-fit" id="enablers">
-        <p class="fs-4">Enablers</p>
-        <p class="fs-4" id="enablersCount">0</p>
-      </div>
-</section>
+  <section class="counter text-light">
+    <div class="counter-container d-flex flex-row justify-content-start justify-content-md-center align-items-center overflow-auto no-scrollbar text-center">
+        <div class="en-mulearn mx-3 mt-3 counter-item text-nowrap w-fit" id="registeredMembers">
+          <p class="fs-4">Registered Members</p>
+          <p class="fs-4" id="registeredCount">0</p>
+        </div>
+      
+        <div class="en-mulearn mx-3 mt-3 counter-item text-nowrap w-fit" id="activeMembers">
+          <p class="fs-4">Active Members</p>
+          <p class="fs-4" id="activeCount">0</p>
+        </div>
+      
+        <div class="en-mulearn mx-3 mt-3 counter-item text-nowrap w-fit" id="karmaPoints">
+          <p class="fs-4">Karma Points</p>
+          <p class="fs-4" id="karmaCount">0</p>
+        </div>
+      
+        <div class="en-mulearn mx-3 mt-3 counter-item text-nowrap w-fit" id="enablers">
+          <p class="fs-4">Enablers</p>
+          <p class="fs-4" id="enablersCount">0</p>
+        </div>
+  </section>
 
-  <div class="row justify-content-center align-items-center py-3 px-2 px-md-3" id="us">
+<!-- redirects -->
+  <section class="redirects my-4 d-flex flex-row justify-content center align-items-center">
+    <a href="https://gtechindia.org/" class="d-block m-auto col-3 btn text-orange fs-4 hover-scale-11 transition-05 hover-blue">GTech</a>
+    <a href="https://mulearn.org/" class="d-block m-auto col-3 btn text-orange fs-4 hover-scale-11 transition-05 hover-blue">μlearn</a>
+    <a href="https://mac.edu.in/" class="d-block m-auto col-3 btn text-orange fs-4 hover-scale-11 transition-05 hover-blue">MAC</a>
+  </section>
+
+<!-- whats mulearn section -->
+  <section class="row justify-content-center align-items-center py-3 px-md-3" id="us">
     <div class="col-md-7" id="">
       <p class="display-5 fw-600 text-center" id="">What's <span class="en-mulearn" id="">μLearn</span></p>
-      <p class="text-md-center p" id="">
-      <span class="en-mulearn " id="">μLearn</span> simply is an awesome space where students could hangout for the purpose of learning and skill development. mulearn is a student driven community where students decides everything, and is supported by expert mentors behind the scenes. It is an all kerala community initiated by Gtech (Group of Technmology comminities), for the purpose of bridging the gap between industry and students and make students job ready. Here we learn as a group from each other and helps each others learn.
-    </p>
+      <p class="text-md-center px-3" id="">
+        <span class=" " id="">
+          <a href="https://mulearn.org/" class="en-mulearn text-decoration-none">μlearn</a>
+        </span> simply is an awesome space where students hangout for the purpose of learning and skill development. μlearn is a student driven community where students decides everything, and is supported by expert mentors behind the scenes. It is an amazing community initiated by <a href="https://gtechindia.org/" class="">GTech</a> (Group of Technmology communities), for the purpose of bridging the gap between industry and students and make students job ready while they pass out of the colleges. Here we learn as a group, from each other and helps each other learn.
+        </p>
+    </div>
+    <div class="col-md-6 d-block" id="">
+        <img src="/assets/img/techFriends.webp" alt="" class="col-11 col-md-8 d-block m-auto img-fluid" id="">
+    </div>
+  </section>
+
+
+<!-- mulearn keypoints -->
+  <section class="d-md-flex flex-row justify-content-start align-items-center overflow-auto no-scrollbar">
+
+      <!--<div col-md-4 class= my-2"keyItem text-center">
+         <img src="/assets/img/index/career.png" alt="" class="img-fluid d-block m-auto keyImg">
+          <p class="keyTitle">
+            Find and choose your Career.
+          </p>
+          <p class="">
+            Don't know which career path to work on! Then join us and explore different carreer paths like web-development, AI, IoT, Digital Marketing and many more...
+          </p>
+      </div> -->
+
+      <div class="col-12 col-md-4  my-2 keyItem text-center">
+        <img src="/assets/img/index/involve.webp" alt="" class="w-25 my-4 d-block m-auto keyImg">
+          <p class="fs-2 text-secondary fw-600 keyTitle">
+            Involve
+          </p>
+          <p class="px-1 px-md-3">
+            µLearn is a place for everyone. A place where one could involve and evolve the most. Be a part of our interesting events like Inspiration Radio, Salt mango tree and many more to make the most out of it.
+          </p>
+      </div>
+
+      <div class="col-12 col-md-4 my-2 keyItem text-center">
+        <img src="/assets/img/index/interact.png" alt="" class="w-25 my-4 d-block m-auto keyImg">
+        <p class="fs-2 text-secondary fw-600 keyTitle">
+          Interact
+        </p>
+        <p class="px-1 px-md-3">
+          An Interactive setting where each one of you could connect with folks and mentors having a remarkable mindset. Your involvements, and dedication to the community can even get you an internship opportunity.
+        </p>
+      </div>
+
+      <div class="col-12 col-md-4 my-2 keyItem text-center">
+        <img src="/assets/img/index/innovate.webp" alt="" class="w-25 my-4 d-block m-auto keyImg">
+        <p class="fs-2 text-secondary fw-600 keyTitle">
+          Innovate
+        </p>
+        <p class="px-1 px-md-3">
+          A place brimming with possibilities for innovation and astonishing creations. A perfect spot to display your works. Here you always advance and invent yourself!
+        </p>
+      </div>
+
+
+  </section>
+
+  <section class="alert alert-orange my-4 my-md-0 ">
+      <div class=" text-center d-md-flex flex-row justify-content-around align-items-center">
+        <img src="/assets/img/index/connect.png" alt="" class=" mx-2 col-5 col-md-1 my-5 d-block mx-auto">
+        <div class="">
+          <p class="fs-2 text-light ts-normal-black fw-600 keyTitle">
+            Connect, Compete and Learn !
+          </p>
+            <p class="p">
+            Connect with like minded people, compete with friends and learn from one another
+          </p>
+        </div>
+      </div>
+  </section>
+
+  <!-- Learn and Grow Together as a Community -->
+  <section class="my-5 text-center d-flex flex-row justify-content-around align-items-center">
+    <div class="col-md-8">
+      <p class="fw-600 h5">Learn and Grow <span class="text-orange">Together</span> as a <span class="text-orange">Community</span></p>
+      <p class="en-mulearn px-3">
+        Are you ready to learn, grow and upskill yourself to the next level? Come, be a part of the community, and let's start learning in a new better way. Call in your friends as well, because things are going to change once you experience it and it is more effective when done with a group.
+      </p>
+
+      <a href="/joinus.html" class="col-8 d-block mx-auto my-4 en-iceland btn btn-success fs-4">Join Us</a>
     </div>
 
-    <div class="col-md-6" id="">
-        <img src="/assets/img/techFriends.webp" alt="" class="img-fluid" id="">
-    </div>
+    <img src="/assets/img/index/community.png" alt="" class="d-none d-md-block">
+  </section>
+
+<!-- FAQ -->
+  <div class="my-4">
+      <h2 class="text-center">Frequently Asked Questions</h2>
+
+<!-- Accordion start -->
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+        
+<!-- Accordion end -->        
+      </div>
+<!-- FAQ End -->
+
+<!-- FAQ Form -->
+      <div class="bg-light p-md-5 mt-5 faq d-md-flex flex-row justify-content-between align-items-center">
+        <img class="d-none d-md-block col-md-3" src="/assets/img/faq.png" alt="" >
+
+        <div class="col-md-8  form alert alert-wheat px-4 px-md-5">
+          <form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSdmeU1L7S8-6f7FPm5YbhESx1dAjv1InVPIvHKHLCLEOvmxkg/formResponse" class="">
+            <p class="text-center fw-600 text-dark fs-5">Have Some other Questions</p>
+            <p class="d-inline">Are you a registered mulearn member</p>
+              <fieldset class="">
+                <label for="yes" class="">Yes
+                  <input type="radio" class="" id="Yes" name="entry.968987353" value="yes">
+                </label>
+                
+                <label for="no" class="">No
+                  <input type="radio" class="" id="no" name="entry.968987353" value="No">
+                </label>
+              </fieldset>
+
+              <fieldset id="">              
+                  <input type="text" name="entry.777203108" class="d-block my-2" id="no" placeholder="Enter your muid">
+
+                  <textarea name="entry.1418484372" class="d-block my-2"  name="" id="" cols="30" rows="3" placeholder="Enter your question / Qwery"></textarea>
+              </fieldset>
+              <button class="btn btn-primary d-block mx-auto col-5" type="submit">Submit</button>
+          </form>
+        </div>
+<!-- FAQ Form End -->
+      </div>
   </div>
 
-  <!-- <div class="" id="">
-    <p class="" id="">Why Should I Join??</p>
-  </div> -->
-
+<div id="Footer"></div>
   
-  <script src="/scripts/home.js"></script>
+<div>
+  
+</div>
+
+
   <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  
+<!-- My JS -->
+  <script src="/scripts/home.js"></script>
+  <script src="/scripts/components.js"></script>
+  <link rel="stylesheet" href="/styles/components.css">
 </body>
 </html>

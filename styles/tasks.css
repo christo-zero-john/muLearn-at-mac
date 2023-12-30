@@ -60,3 +60,8 @@ header p{
     width: fit-content;
     border-radius: 5px;
 }
+
+.infoImg{
+    width: 5%;
+    cursor: pointer;
+}

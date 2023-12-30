@@ -12,6 +12,7 @@
         <!-- mycss -->
         <link rel="stylesheet" href="/defaults.css">
         <link rel="stylesheet" href="/styles/events.css">
+        <link rel="stylesheet" href="/styles/components.css">
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -24,28 +25,20 @@
     </head>
 
     <body class="en-Oxanium">
-        
+        <div class="sticky-top" id="navBar"></div>
         <main class="">
             <!-- <h1 class="py-3 text-center">Latest Events</h1> -->
 
+<!-- mac events -->
+    <h1 class="py-3 text-center">MAC Events</h1>
+        <div class="d-flex flex-row justify-content-start justify-content-md-center  align-items-center overflow-auto no-scrollbar flex-md-wrap"  id="macEvents">
+
+        </div>
+
 <!-- mulearn events -->
     <h1 class="py-3 text-center">muLearn Events</h1>
-            <div class="d-flex flex-row justify-content-start justify-content-md-center  align-items-center overflow-auto no-scrollbar flex-md-wrap" id="muEvents">
-                <!-- <div class="m-2 eventItem card col-5 col-md-3 small">
-                    <img class="w-10 m-0 p-0 eventItemImg card-header alert alert-success" src="/assets/img/events/winterPython.jpg" alt="" class="">
+        <div class="d-flex flex-row justify-content-start justify-content-md-center  align-items-center overflow-auto no-scrollbar flex-md-wrap" id="muEvents"></div>
 
-                    <p class="card-footer en-iceland  bg-success m-0  text-light fs-5 text-center text-nowrap">
-                        Winter Python
-                        <img class=" img-fluid infoImg" src="/assets/img/info.png" alt="" onclick="eventdetails('#winter-python')">
-                    </p>
-                </div> -->
-            </div>
-
-<!-- mac events -->
-        <h1 class="py-3 text-center">MAC Events</h1>
-            <div class="d-flex flex-row justify-content-start justify-content-md-center  align-items-center overflow-auto no-scrollbar flex-md-wrap"  id="macEvents">
-
-            </div>
 
         </main>
 
@@ -68,6 +61,7 @@
     </div>
   </div>
 
+  <div id="Footer"></div>
 
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -83,5 +77,10 @@
 
         <!-- my script -->
         <script src="/scripts/events.js"></script>
+
+        <!-- components -->
+        <script src="/scripts/components.js"></script>
+        <link rel="stylesheet" href="/styles/components.css">
+
     </body>
 </html>

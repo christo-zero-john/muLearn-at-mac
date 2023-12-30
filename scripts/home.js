@@ -1,3 +1,9 @@
+var dio = {
+  "Enter Your muid" : 777203108,
+  "Enter Your Question": 1418484372,
+  "Are you a registered mulearn member":968987353
+}
+
 // Function to smoothly increment numbers
 function animateNumbers(target, elementId) {
     let start = 0;
