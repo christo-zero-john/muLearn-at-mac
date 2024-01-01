@@ -33,6 +33,10 @@ document.getElementById("navBar").innerHTML  = `
               </li>
 
               <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="https://learn.mulearn.org/">Interest Groups</a>
+              </li>
+
+              <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="/p/execom.html">Execom</a>
               </li>
 
@@ -61,8 +65,8 @@ document.getElementById("Footer").innerHTML = `
     <div class="container p-4">
     </div>
     <div class="text-center p-3 bg-dark" >
-        <div class="alert alert-light">
-              <a class=" btn btn-dark border-0 btn-floating m-1 instagram" href="https://www.instagram.com/mulearn.mac" role="button"  style="
+        <p class="alert alert-light px-1">
+              <a class="btn btn-light  border-0 btn-floating m-1 instagram" href="https://www.instagram.com/mulearn.mac" role="button"  style="
               background: url(/assets/img/index/instagram.png);
               background-size: contain;
               background-position: center;
@@ -73,11 +77,11 @@ document.getElementById("Footer").innerHTML = `
               <span class="en-iceberg text-violet">
               Team <span class="en-mulearn">μLearn</span> @ MAC
               </span>  
-        </div>
+        </p>
         <p class=" small text-center mt-2">
-        <a href="https://mulearn.org/termsandconditions" class="text-decoration-none">Terms And Conditions</a>
+          <a href="https://mulearn.org/termsandconditions" class="text-decoration-none text-info">Terms And Conditions</a>
         <span class="px-1">|</span>
-        <a href="https://mulearn.org/privacypolicy" class="text-decoration-none">Privacy Policy</a>
+          <a href="https://mulearn.org/privacypolicy" class="text-decoration-none text-success">Privacy Policy</a>
     </p>
     </div>
     
