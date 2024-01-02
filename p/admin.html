@@ -18,7 +18,7 @@
     <div class="w-100 sticky-top" id="navBar"></div>
 
 <!-- How it Works? section -->
-    <div class="mt-5 accordion accordion-flush col-12" id="accordionFlushExample">
+    <div class="mt-1 mt-md-2 accordion accordion-flush col-12" id="accordionFlushExample">
         <div class="accordion-item w-100 pb-3">
           <h2 class="accordion-header" id="flush-headingOne">
             <button class="accordion-button collapsed alert alert-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -31,12 +31,11 @@
                 <p class="p"><span class="fw-900"> Step 1:</span> Select a student</p>
                 <p class="p"><span class="fw-900">Step 2: </span> Select task to be added for the selected student</p>
                 <p class="p"><span class="fw-900">Step 3: </span> Click on <span class="text-primary">ADD</span> to add the selected task to the task list of selected student.</p>
-                <p class="p"><span class="fw-900">Step 4: </span> Repeat steps 1, 2, and 3 and add all data to be submitted. You can see added data to be submitted in the table  which will appear below as you add new data</p>
-                <p class="p"><span class="fw-900">Step 5: </span>Click on <span class="bg-warning">submit</span> button and submit data</p>
+                <p class="p"><span class="fw-900">Step 4: </span> Repeat steps 1, 2, and 3 and add all students and their corresponding completed tasks to be submitted. You can see added data to be submitted in the table  which will appear below as you add new data</p>
+                <p class="p"><span class="fw-900">Step 5: </span>Click on <span class="bg-warning">submit</span> button and submit data.</p>
         
-                <p class="p" id=""><span class="fw-900">Note</span>: To view already completed tasks of a student, first select the name of the student from the input and click on view completed tasks button, which will appear then.</p>
-        
-                <ul class="" type="circle"> <span class="fw-900">Note</span>:
+                <ul class="" type="circle"> <span class="fw-900 text-primary">Note</span>:
+                    <li>To view already completed tasks of a student, first select the name of the student from the input and click on view completed tasks button, which will appear then.</li>
                     <li>The ADD and submit buttons are disabled by default.</li>
                     <li>The ADD button gets enabled when valid students and hashtag is selected from corresponding input fields.</li>
                     <li>The submit button gets enabled when atleast one student is added.</li>
@@ -57,26 +56,33 @@
     </div>
 
 <!-- form -->
-    <form action="" class="form-group text-center" id="forms">
-        <label for="studentName" class="" id="">
-            <input class="getStudent px-3 mx-2 mb-3" id="studentName" placeholder="Enter muid" list="studentList" required>
-        </label>
-        <datalist id="studentList"></datalist>
+    <div id="macScoreForm" style="display:none;">
+        <form action="" class="form-group text-center" >
+            <p class="fs-4 fw-600">Assign MAC Score for Students</p>
+            <label for="studentName" class="" id="">
+                <input class="getStudent px-3 mx-2 mb-3" id="studentName" placeholder="Enter muid" list="studentList" required>
+            </label>
+            <datalist id="studentList"></datalist>
+    
+            <label for="taskId" class="" id="">
+                <input list="taskList" class="getTask px-3 mx-2 mb-3" id="taskId" placeholder="Enter a hashtag" required>
+            </label>
+            <datalist id="taskList"></datalist>
+        </form>
 
-        <label for="taskId" class="" id="">
-            <input list="taskList" class="getTask px-3 mx-2 mb-3" id="taskId" placeholder="Enter a hashtag" required>
-        </label>
-        <datalist id="taskList"></datalist>
-    </form>
-
-<!-- buttons -->
+        <!-- buttons -->
     <fieldset class="button-group w-100 text-center my-3">
         <button class="btn btn-primary px-5" id="addData" onclick="addStudent()" disabled>ADD</button>
         <button class="btn btn-warning px-5" id="submitData" onclick="submitMacScoreToSheet()" disabled>Submit</button>    
-    </fieldset>    
+    </fieldset>   
+    </div>
+
+ 
 
 <!-- infodiv -->
-    <div class="alert alert-primary col-12 text-center fs-5"  id="info"></div>    
+    <div class="alert alert-primary col-12 text-center fs-5"  id="info">
+        <p class="">Loading Please wait. Check your network connection if it's taking too long.</p>
+    </div>    
 
 <!-- completed tasks table -->
     <table class="table px-5 text-center" id="printTaskTable"></table>
