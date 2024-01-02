@@ -3,6 +3,7 @@ var spreadsheet_id = '1ROUxDLf3nZ_gAJjjjcO5yRgeeRGgncSCGUgCxBWBWVo';
 var taskDiv = document.getElementById("tasksDiv");
 var modalBody = document.getElementById("modalBody");
 let modalDiv = new bootstrap.Modal(document.getElementById('modalDiv'), {});
+var searchTask = document.getElementById("searchTask");
 var tasks;
 
 fetch(`https://opensheet.elk.sh/${spreadsheet_id}/tasks`)
@@ -79,7 +80,6 @@ function printTaskDetails(x){
     getTaskByHashtag(x);
 }
 
-
 function getTaskByHashtag(x){
     // here x is hashtag of a task
     // console.log(tasks)
@@ -103,3 +103,7 @@ function getTaskByHashtag(x){
         }
     }
 }
+
+searchTask.getStudent.addEventListener('input', function(event){
+    
+})
