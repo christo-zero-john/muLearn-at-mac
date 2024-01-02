@@ -15,9 +15,6 @@
   width: 5px;
 }
 
-
-
-
 /* fonts */
 .en-iceberg{
     font-family: 'Iceberg', sans-serif;
@@ -38,6 +35,16 @@
 .en-mulearn{
   font-family: 'Exo 2', sans-serif; 
   font-style: italic;
+}
+
+
+/* icons */
+.infoIcon{
+  background: url(https://raw.githubusercontent.com/christo-zero-john/defaults/main/info.png);
+  background-size: cover;
+  background-position: center;
+  min-width: 30px;
+  min-height: 30px;
 }
 
 /* widths */
@@ -395,6 +402,7 @@
   letter-spacing: 0.1;
 }
 
+
 /* text colors */
 .text-wheat{
   color: wheat;
@@ -418,6 +426,56 @@
 
 .text-violet{
   color: #a047fa;
+}
+
+
+/* link colors */
+.link-wheat{
+  color: wheat;
+}
+
+.link-orange{
+  color: orange;
+}
+
+.link-aqua{
+  color: aqua;
+}
+
+.link-aquamarine{
+  color: aquamarine;
+}
+
+.link-greenyellow{
+  color: greenyellow;
+}
+
+.link-violet{
+  color: #a047fa;
+}
+
+.link-wheat:hover{
+  color: #f5deb3bd
+}
+
+.link-orange:hover{
+  color: #ffa600bd;
+}
+
+.link-aqua:hover{
+  color: #00ffffbd;
+}
+
+.link-aquamarine:hover{
+  color: #7fffd4bd;
+}
+
+.link-greenyellow:hover{
+  color: #adff2fbd;
+}
+
+.link-violet:hover{
+  color: #a047fabd;
 }
 
 
