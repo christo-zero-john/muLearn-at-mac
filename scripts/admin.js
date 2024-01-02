@@ -12,6 +12,8 @@ var students, tasks, addData = [
 ];    //stores student ,tasks data, and data to be added
 
 var newData; // Strores an isntance of new data. This is appended to add data array when add button is pressed
+
+var macScoreForm = document.getElementById("macScoreForm");
 var studentList = document.getElementById("studentList"); // datalist element for tasks Students
 var taskList = document.getElementById("taskList");  // datalist element for tasks
 var infoDiv = document.getElementById("info"); // Information div. Updates when a student or task is selected in input
@@ -21,6 +23,7 @@ var dataTable = document.getElementById("dataTable"); // contains data to be add
 var addDataBtn = document.getElementById("addData");
 var submitDataBtn = document.getElementById("submitData");
 
+
 // fetch student data from mulearn data google sheet*(mac tab) and initialize student list. Using opensheets.lk
 fetch(`https://opensheet.elk.sh/${spreadsheet_id}/mac`)
     .then(res=>res.json())
@@ -28,6 +31,7 @@ fetch(`https://opensheet.elk.sh/${spreadsheet_id}/mac`)
         console.log("Fetch students success")
         console.log(res)
         setStudentList(res);
+        
         
     })
 
@@ -68,6 +72,12 @@ function setTaskList(){
         <option value="${tasks[x].hashtag}">${tasks[x].hashtag}</option>
         `
     }
+    printMacForm();
+}
+
+function printMacForm(){
+    macScoreForm.style.display = "block";
+    infoDiv.innerHTML = "";
 }
 
 
@@ -108,6 +118,7 @@ getTask.addEventListener('input', function(event){
     else{
         addDataBtn.disabled = true;
     }
+
 })
 
 // reruen student object from student id. Contains all student related data
@@ -250,20 +261,15 @@ function submitMacScoreToSheet(){
                 })
                 console.log("submitted data", x)
                 if( x == 3){
+                    infoDiv.innerHTML = `
+                    <div class="alert  alert-success">
+                        Data Submission successful. Refresh this page after 10 seconds before submiting another data.
+                    </div>
+                    `
                     break;
                 }
             }
             console.log("submit data = ", submitData)
-            for(i=0; i<4820; i++ ){
-                store.edit("mac",{
-                    search:{id: `students1`},
-                    set:{data: submitData[0]}
-                })
-                .then(res => {
-                    console.log(res)
-                    console.log("submitted data", i)
-                })
-            }
         }
     }
     
