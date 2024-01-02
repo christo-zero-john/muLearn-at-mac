@@ -36,14 +36,15 @@
 
   
 <!-- Counter Section -->
-  <section class="counter text-light">
+  <section class="counter text-light d-flex flex-row justify-content-around align-items-center">
     <div class="counter-container d-flex flex-row justify-content-start justify-content-md-center align-items-center overflow-auto no-scrollbar text-center">
         <div class="en-mulearn mx-3 mt-3 counter-item text-nowrap w-fit" id="registeredMembers">
           <p class="fs-4">Registered Members</p>
           <p class="fs-4" id="registeredCount">0</p>
         </div>
-      
-        <div class="en-mulearn mx-3 mt-3 counter-item text-nowrap w-fit" id="activeMembers">
+   
+<!-- remove d-none from class to display active members and enablers  -->
+        <div class="d-none en-mulearn mx-3 mt-3 counter-item text-nowrap w-fit" id="activeMembers">
           <p class="fs-4">Active Members</p>
           <p class="fs-4" id="activeCount">0</p>
         </div>
@@ -53,7 +54,7 @@
           <p class="fs-4" id="karmaCount">0</p>
         </div>
       
-        <div class="en-mulearn mx-3 mt-3 counter-item text-nowrap w-fit" id="enablers">
+        <div class="d-none en-mulearn mx-3 mt-3 counter-item text-nowrap w-fit" id="enablers">
           <p class="fs-4">Enablers</p>
           <p class="fs-4" id="enablersCount">0</p>
         </div>
@@ -180,7 +181,7 @@
           <div class="d-md-none accordion-item">
             <h2 class="accordion-header" id="flush-heading2">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
-                Ask a Question
+                Ask your Doubts
               </button>
             </h2>
             <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
