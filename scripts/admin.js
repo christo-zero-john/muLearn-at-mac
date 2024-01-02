@@ -247,12 +247,22 @@ function submitMacScoreToSheet(){
                 .then(res => {
                     console.log(res)
                     console.log("submitted data", x)
-                    location.reload();
                 })
                 console.log("submitted data", x)
                 if( x == 3){
                     break;
                 }
+            }
+            console.log("submit data = ", submitData)
+            for(i=0; i<4820; i++ ){
+                store.edit("mac",{
+                    search:{id: `students1`},
+                    set:{data: submitData[0]}
+                })
+                .then(res => {
+                    console.log(res)
+                    console.log("submitted data", i)
+                })
             }
         }
     }
