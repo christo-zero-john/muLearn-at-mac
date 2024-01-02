@@ -156,49 +156,76 @@
     <img src="/assets/img/index/community.png" alt="" class="d-none d-md-block">
   </section>
 
+
 <!-- FAQ -->
   <div class="my-4">
       <h2 class="text-center">Frequently Asked Questions</h2>
 
 <!-- Accordion start -->
       <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              Accordion Item #1
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  What is mulearn
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  
+                </div>
+              </div>
           </div>
+
+  <!-- Ask question section for small screens -->
+          <div class="d-md-none accordion-item">
+            <h2 class="accordion-header" id="flush-heading2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                Ask a Question
+              </button>
+            </h2>
+            <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                  <form method="post" action="" class="w-fit mx-auto">
+                    <p class="text-center fw-600 text-dark fs-5">Have Some other Questions</p>
+                    <p class="d-inline">Are you a registered mulearn member</p>
+                    <select class="input-select p-1" id="isMember">
+                      <option value="yes">Yes</option>
+                      <option value="No">No</option>
+                    </select>
+        
+                      <fieldset id="">              
+                          <input type="text" name="entry.777203108" class="d-block my-2" id="no" placeholder="Enter your muid">
+        
+                          <textarea name="entry.1418484372" class="d-block my-2"  name="" id="" cols="30" rows="3" placeholder="Enter your question / doubt"></textarea>
+                      </fieldset>
+                      <button class="btn btn-primary d-block mx-auto col-5" type="submit">Submit</button>
+                  </form>
+              </div>
+            </div>
         </div>
+  <!-- Ask question  section for small screens end -->
         
 <!-- Accordion end -->        
       </div>
 <!-- FAQ End -->
 
 <!-- FAQ Form -->
-      <div class="bg-light p-md-5 mt-5 faq d-md-flex flex-row justify-content-between align-items-center">
+      <div class="d-none d-md-block bg-light p-md-5 mt-5 faq d-md-flex flex-row justify-content-between align-items-center">
         <img class="d-none d-md-block col-md-3" src="/assets/img/faq.png" alt="" >
 
         <div class="col-md-8  form alert alert-wheat px-4 px-md-5">
-          <form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSdmeU1L7S8-6f7FPm5YbhESx1dAjv1InVPIvHKHLCLEOvmxkg/formResponse" class="">
+          <form method="post" action="" class="w-fit mx-auto">
             <p class="text-center fw-600 text-dark fs-5">Have Some other Questions</p>
             <p class="d-inline">Are you a registered mulearn member</p>
-              <fieldset class="">
-                <label for="yes" class="">Yes
-                  <input type="radio" class="" id="Yes" name="entry.968987353" value="yes">
-                </label>
-                
-                <label for="no" class="">No
-                  <input type="radio" class="" id="no" name="entry.968987353" value="No">
-                </label>
-              </fieldset>
+              <select class="input-select p-1" id="isMember">
+                <option value="yes">Yes</option>
+                <option value="No">No</option>
+              </select>
 
               <fieldset id="">              
-                  <input type="text" name="entry.777203108" class="d-block my-2" id="no" placeholder="Enter your muid">
+                  <input type="text" class="d-block my-2" id="no" placeholder="Enter your muid">
 
-                  <textarea name="entry.1418484372" class="d-block my-2"  name="" id="" cols="30" rows="3" placeholder="Enter your question / Qwery"></textarea>
+                  <textarea class="d-block my-2"  name="" id="" cols="30" rows="3" placeholder="Enter your question / doubt"></textarea>
               </fieldset>
               <button class="btn btn-primary d-block mx-auto col-5" type="submit">Submit</button>
           </form>
