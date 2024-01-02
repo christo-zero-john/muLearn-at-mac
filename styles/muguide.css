@@ -34,7 +34,6 @@
     background: #333;
     color: gray;
     border-radius: 8px;
-    max-width: 400px;
   }
   
   /* Information about the timeline */
@@ -58,7 +57,7 @@
     height: 10px;
     background: white;
     border-radius: 999px;
-    left: -39px;
+    left: -36px;
     border: 3px solid orangered;
   }
 
@@ -69,3 +68,4 @@
 .cImg{
   max-width: 40vw;
 }
+
