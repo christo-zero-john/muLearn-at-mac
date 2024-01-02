@@ -9,7 +9,7 @@ document.getElementById("navBar").innerHTML  = `
 <div class="navContainer bg-orange py-1 ">
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand en-mulearn" href="/index.html">μLEARN</a>
+        <a class="mx-1 navbar-brand en-mulearn" href="/index.html">μLEARN</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -81,7 +81,7 @@ document.getElementById("Footer").innerHTML = `
         <p class=" small text-center mt-2">
           <a href="https://mulearn.org/termsandconditions" class="text-decoration-none text-info">Terms And Conditions</a>
         <span class="px-1">|</span>
-          <a href="https://mulearn.org/privacypolicy" class="text-decoration-none text-success">Privacy Policy</a>
+          <a href="https://mulearn.org/privacypolicy" class="text-decoration-none link-greenyellow">Privacy Policy</a>
     </p>
     </div>
     
