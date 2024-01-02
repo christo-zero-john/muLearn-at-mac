@@ -121,7 +121,7 @@ getTask.addEventListener('input', function(event){
 
 })
 
-// reruen student object from student id. Contains all student related data
+// return student object from student id. Contains all student related data
 function getStudentById(x){
     for(i in students){
         if(students[i].muid == x){
@@ -192,6 +192,11 @@ function addStudent()
             }
             else{
                 console.log(`${addData[addData.length-1].name} already completed this task ${getTask.value}`);
+
+                infoDiv.innerHTML =
+                `
+                <p class="" id="">${getStudentById(getStudent.value).name} already completed this task ${getTask.value} (${getTaskByHashtag(getTask.value).title})</p>
+                `
             }
 
             //             
@@ -258,16 +263,17 @@ function submitMacScoreToSheet(){
                 .then(res => {
                     console.log(res)
                     console.log("submitted data", x)
+                    if( x == submitData.length-1){
+                        infoDiv.innerHTML = `
+                        <div class="alert  alert-success">
+                            Data Submission successful. Refresh this page after 10 seconds before submiting another data.
+                        </div>
+                        `
+                      console.log(`submitted data ${x}`)  
+                    }
                 })
-                console.log("submitted data", x)
-                if( x == 3){
-                    infoDiv.innerHTML = `
-                    <div class="alert  alert-success">
-                        Data Submission successful. Refresh this page after 10 seconds before submiting another data.
-                    </div>
-                    `
-                    break;
-                }
+                
+                
             }
             console.log("submit data = ", submitData)
         }
