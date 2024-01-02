@@ -62,6 +62,10 @@ header p{
 }
 
 .infoImg{
-    width: 5%;
+    width: 30px;
     cursor: pointer;
+}
+
+.infoIcon{
+    width: 100px;
 }
