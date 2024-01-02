@@ -20,7 +20,7 @@ function animateNumbers(target, elementId) {
 }
 
 // Initial update with animations
-animateNumbers(200, 'registeredCount');
+animateNumbers(100, 'registeredCount');
 animateNumbers(80, 'activeCount');
 animateNumbers(185000, 'karmaCount');
 animateNumbers(1, 'enablersCount');
