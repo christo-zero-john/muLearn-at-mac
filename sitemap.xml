@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mulearnatmac.netlify.app/p/index.html</loc>
-    <lastmod>02-01-2024</lastmod>
+    <loc>https://mulearnatmac.netlify.app/</loc>
+    <lastmod>05-01-2024</lastmod>
   </url>
 
     <url>
-    <loc>https://mulearnatmac.netlify.app/p/e/events.html</loc>
-    <lastmod>02-01-2024</lastmod>
+    <loc>https://mulearnatmac.netlify.app/p/e/events</loc>
+    <lastmod>05-01-2024</lastmod>
   </url>
 
   <url>
-    <loc>https://mulearnatmac.netlify.app/p/admin.html</loc>
-    <lastmod>02-01-2024</lastmod>
+    <loc>https://mulearnatmac.netlify.app/p/admin</loc>
+    <lastmod>05-01-2024</lastmod>
   </url>
 
   <url>
-    <loc>https://mulearnatmac.netlify.app/p/faq.html</loc>
-    <lastmod>02-01-2024</lastmod>
+    <loc>https://mulearnatmac.netlify.app/p/faq</loc>
+    <lastmod>05-01-2024</lastmod>
   </url>
 
   <url>
-    <loc>https://mulearnatmac.netlify.app/p/joinus.html</loc>
-    <lastmod>02-01-2024</lastmod>
+    <loc>https://mulearnatmac.netlify.app/p/joinus</loc>
+    <lastmod>05-01-2024</lastmod>
   </url>  
   
   <url>
-    <loc>https://mulearnatmac.netlify.app/p/muGuide.html</loc>
-    <lastmod>02-01-2024</lastmod>
+    <loc>https://mulearnatmac.netlify.app/p/muGuide</loc>
+    <lastmod>05-01-2024</lastmod>
   </url>
 
     <url>
-    <loc>https://mulearnatmac.netlify.app/p/ranks.html</loc>
-    <lastmod>02-01-2024</lastmod>
+    <loc>https://mulearnatmac.netlify.app/p/ranks</loc>
+    <lastmod>05-01-2024</lastmod>
   </url>
 
   <url>
-    <loc>https://mulearnatmac.netlify.app/p/tasks.html</loc>
-    <lastmod>02-01-2024</lastmod>
+    <loc>https://mulearnatmac.netlify.app/p/tasks</loc>
+    <lastmod>05-01-2024</lastmod>
   </url>
 </urlset>

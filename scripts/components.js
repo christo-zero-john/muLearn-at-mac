@@ -64,8 +64,8 @@ document.getElementById("Footer").innerHTML = `
     <footer class="w-100 text-center text-white">
     <div class="container p-4">
     </div>
-    <div class="text-center p-3 bg-dark" >
-        <p class="alert alert-light px-1 p">
+    <div class="text-center p-3 bg-dark pb-2" >
+        <p class="alert alert-light px-1 py-2 p">
               <a class="btn btn-light  border-0 btn-floating m-1 instagram" href="https://www.instagram.com/mulearn.mac" role="button"  style="
               background: url(/assets/img/index/instagram.png);
               background-size: contain;
@@ -74,9 +74,9 @@ document.getElementById("Footer").innerHTML = `
               height: 30px;
               "></a>
               Developed and Managed By,
-              <span class="en-iceberg text-violet">
+              <a href="/p/execom" class="text-decoration-none link-violet en-iceberg text-violet">
               Team <span class="en-mulearn p">μLearn</span> @ MAC
-              </span>  
+              </a>  
         </p>
         <p class="p small text-center mt-2">
           <a href="https://mulearn.org/termsandconditions" class="text-decoration-none text-info">Terms And Conditions</a>
