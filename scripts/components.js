@@ -51,7 +51,6 @@ document.getElementById("navBar").innerHTML  = `
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="/p/faq.html">FAQ</a>
               </li>
-
             </ul>
         </div>
     </div>
@@ -65,15 +64,15 @@ document.getElementById("Footer").innerHTML = `
     <div class="container p-4">
     </div>
     <div class="text-center p-3 bg-dark pb-2" >
-        <p class="alert alert-light px-1 py-2">
-              <a class="btn btn-light  border-0 btn-floating m-1 instagram" href="https://www.instagram.com/mulearn.mac" role="button"  style="
-              background: url(/assets/img/index/instagram.png);
+        <p class="alert alert-light px-1 py-2 small">
+              <a class="btn btn-dark border-0 btn-floating m-1 instagram" href="https://www.instagram.com/mulearn.mac" role="button"  style="
+              background: url(/assets/img/instagram.png);
               background-size: contain;
               background-position: center;
               width: 30px;
               height: 30px;
               "></a>
-              Developed and Managed By,
+              Developed & Managed By,
               <a href="/p/execom" class="text-decoration-none link-violet en-iceberg text-violet">
               Team <span class="en-mulearn p">μLearn</span> @ MAC
               </a>  
@@ -83,8 +82,31 @@ document.getElementById("Footer").innerHTML = `
         <span class="px-1">|</span>
           <a href="https://mulearn.org/privacypolicy" class="text-decoration-none link-greenyellow">Privacy Policy</a>
     </p>
+    <a href="##" class="small text-decoration-none link-danger" onclick="expandFooter()">More Options </a>
     </div>
-    
+
+    <div class="" id="footerExt">
+        <a href="/p/joinus.html" class="text-center mx-5 mt-3 footerExt text-decoration-none link-orange">Join Us</a>
+
+        <a href="/p/muGuide.html" class="text-center mx-5 mt-3 footerExt text-decoration-none link-orange">Getting Started</a>
+
+        <a href="/p/tasks.html" class="text-center mx-5 mt-3 footerExt text-decoration-none link-orange">All Tasks List</a>
+
+        <a href="https://learn.mulearn.org/" class="text-center mx-5 mt-3 footerExt text-decoration-none link-orange">Interest Groups</a>
+
+        <a href="/p/execom.html" class="text-center mx-5 mt-3 footerExt text-decoration-none link-orange">Our Team, μLEARN @ MAC</a>
+
+        <a href="/p/e/events.html" class="text-center mx-5 mt-3 footerExt text-decoration-none link-orange">Events</a>
+
+        <a href="/p/faq.html" class="text-center mx-5 mt-3 footerExt text-decoration-none link-orange">Frequently Asked Questions</a>
+    </div>
+
     </footer>
     <!-- Footer -->
 `
+footerExt = document.getElementById("footerExt");
+footerExt.style.display = "none";
+
+function expandFooter(){
+  footerExt.classList = `d-flex flex-row justify-content-around align-item-center flex-wrap text-center bg-dark pb-4`;
+}

@@ -12,7 +12,7 @@ $(document).ready(function () {
         $(this).find('.card-front, .card-back').removeClass('rotate');
     });
 
-    // Add your custom JavaScript code here
+    // Add your Custom JavaScript code here
 });
 
 var execomDiv = document.getElementById("execomDiv");
@@ -28,6 +28,7 @@ fetch(`https://opensheet.elk.sh/${spreadsheet_id}/execom`)
 
 function printExecom(data){
     console.log(data);
+
     execomDiv.innerHTML = "";
     for(x=0; x<2; x++){
         execomDiv.innerHTML += `
