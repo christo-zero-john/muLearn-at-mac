@@ -76,3 +76,7 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+.socialIcon{
+    width: 23%;
+}
