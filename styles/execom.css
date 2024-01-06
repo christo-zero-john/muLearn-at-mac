@@ -49,12 +49,12 @@ body {
 .card-text {
     font-size: 14px;
 }
-
+/* 
 @media (max-width: 768px) {
     .card {
         margin-bottom: 20px;
     }
-}
+} */
 
 .header {
     padding: 70px;
