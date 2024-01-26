@@ -94,7 +94,7 @@ document.getElementById("Footer").innerHTML = `
 
         <a href="https://learn.mulearn.org/" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange">Interest Groups</a>
 
-        <a href="/p/execom.html" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange">Our Team, μLEARN @ MAC</a>
+        <a href="/p/execom.html" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange">Our Team</a>
 
         <a href="/p/e/events.html" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange">Events</a>
 
