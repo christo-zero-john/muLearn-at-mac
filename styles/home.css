@@ -9,7 +9,9 @@ body{
   background-attachment: fixed;
 }
 
-
+.accordion{
+  max-height: 75vh;
+}
 
 .counter{
   background: linear-gradient(#ffffff59, #ffffff52), url(/assets/img/counterBg.jpg);

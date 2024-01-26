@@ -26,8 +26,38 @@
     <body>
         <div class=" sticky-top" id="navBar"></div>
 
-        <div id="Footer"></div>
+        <div id="faqDiv">
+            <div class="accordion overflow-auto no-scrollbar mx-2 mx-md-3" id="accordion">
+                
+            </div>
+        </div>
 
+<!-- FAQ Form -->
+    <div class="bg-light p-md-5 mt-5 faq d-md-flex flex-row justify-content-between align-items-center">
+        <img class="col-5 d-block mx-auto" src="/assets/img/faq.png" alt="" >
+
+        <div class="col-md-8  form alert alert-wheat px-4 px-md-5">
+          <form method="post" action="" class="w-fit mx-auto" id="formlarge">
+            <p class="text-center fw-600 text-dark fs-5">Have Some other Questions</p>
+            <p class="d-inline">Are you a registered mulearn member</p>
+              <select class="input-select p-1" id="isMember">
+                <option value="yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+
+              <fieldset id="">              
+                  <input type="text" class="d-block my-2" id="no" placeholder="Enter your muid">
+
+                  <textarea class="d-block my-2"  name="" id="faqFormLarge" cols="30" rows="3" placeholder="Enter your question / doubt"></textarea>
+              </fieldset>
+              <button class="d-none" type="submit"></button>
+            </form>
+            <button type="button" class="btn btn-primary d-block mx-auto col-5" onclick="submitFaq(document.getElementById('faqFormLarge').value); document.getElementById('faqFormLarge').value = ''">Submit</button>
+          
+        </div>
+    <!-- FAQ Form End -->
+    </div>
+    <div id="Footer"></div>
 
         <!-- Bootstrap JavaScript Libraries -->
         <script
@@ -41,6 +71,9 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+
+        <!-- my JS -->
+        <script src="/scripts/faq.js"></script>
 
         <!-- components -->
         <script src="/scripts/components.js"></script>

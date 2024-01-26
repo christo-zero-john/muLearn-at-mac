@@ -163,7 +163,7 @@
       <h2 class="text-center">Frequently Asked Questions</h2>
 
 <!-- Accordion start -->
-      <div class="accordion accordion-flush hd-50 overflow-auto no-scrollbar" id="accordion">
+      <div class="mx-2 mx-md-4 accordion accordion-flush overflow-auto no-scrollbar" id="accordion">
          
 
   <!-- Ask question section for small screens -->
@@ -181,17 +181,17 @@
         <div class="col-md-8  form alert alert-wheat px-4 px-md-5">
           <form method="post" action="" class="w-fit mx-auto" id="formlarge">
             <p class="text-center fw-600 text-dark fs-5">Have Some other Questions</p>
-            <p class="d-inline">Are you a registered mulearn member</p>
+          <!--   <p class="d-inline">Are you a registered mulearn member</p>
               <select class="input-select p-1" id="isMember">
                 <option value="yes">Yes</option>
                 <option value="No">No</option>
               </select>
 
               <fieldset id="">              
-                  <input type="text" class="d-block my-2" id="no" placeholder="Enter your muid">
+                  <input type="text" class="d-block my-2" id="no" placeholder="Enter your muid"> -->
 
                   <textarea class="d-block my-2"  name="" id="faqFormLarge" cols="30" rows="3" placeholder="Enter your question / doubt"></textarea>
-              </fieldset>
+              <!-- </fieldset> -->
               <button class="d-none" type="submit"></button>
             </form>
             <button type="button" class="btn btn-primary d-block mx-auto col-5" onclick="submitFaq(document.getElementById('faqFormLarge').value); document.getElementById('faqFormLarge').value = ''">Submit</button>
