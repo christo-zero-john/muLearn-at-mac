@@ -1,7 +1,7 @@
 /*
 <!-- components -->
 <script src="/scripts/components.js"></script>
-<link rel="stylesheet" href="/styles/components.css"></link>
+<link rel="stylesheet" href="/styles/components.css">
 
 */
 
@@ -35,13 +35,13 @@ document.getElementById("navBar").innerHTML  = `
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="https://learn.mulearn.org/">Interest Groups</a>
               </li>
-
+              
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/p/execom.html">Execom</a>
+                <a class="nav-link" aria-current="page" href="/p/ranks.html">Leaderboard</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/p/ranks.html">Leaderboard</a>
+                <a class="nav-link" aria-current="page" href="/p/execom.html">Execom</a>
               </li>
 
               <li class="nav-item">
@@ -86,19 +86,19 @@ document.getElementById("Footer").innerHTML = `
     </div>
 
     <div class="" id="footerExt">
-        <a href="/p/joinus.html" class="text-center mx-5 mt-3 footerExt text-decoration-none link-orange">Join Us</a>
+        <a href="/p/joinus.html" class="col-4 py-2 col-md-2 text-decoration-none text-left link-orange">Join Us</a>
 
-        <a href="/p/muGuide.html" class="text-center mx-5 mt-3 footerExt text-decoration-none link-orange">Getting Started</a>
+        <a href="/p/muGuide.html" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange">Getting Started</a>
 
-        <a href="/p/tasks.html" class="text-center mx-5 mt-3 footerExt text-decoration-none link-orange">All Tasks List</a>
+        <a href="/p/tasks.html" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange">All Tasks List</a>
 
-        <a href="https://learn.mulearn.org/" class="text-center mx-5 mt-3 footerExt text-decoration-none link-orange">Interest Groups</a>
+        <a href="https://learn.mulearn.org/" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange">Interest Groups</a>
 
-        <a href="/p/execom.html" class="text-center mx-5 mt-3 footerExt text-decoration-none link-orange">Our Team, μLEARN @ MAC</a>
+        <a href="/p/execom.html" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange">Our Team, μLEARN @ MAC</a>
 
-        <a href="/p/e/events.html" class="text-center mx-5 mt-3 footerExt text-decoration-none link-orange">Events</a>
+        <a href="/p/e/events.html" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange">Events</a>
 
-        <a href="/p/faq.html" class="text-center mx-5 mt-3 footerExt text-decoration-none link-orange">Frequently Asked Questions</a>
+        <a href="/p/faq.html" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange">Frequently Asked Questions</a>
     </div>
 
     </footer>

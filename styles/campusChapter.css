@@ -1,0 +1,14 @@
+.campusImg{
+    background: linear-gradient(#00000050,#00000070), url(/assets/img/campusChapter/campusSkyView.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* position: absolute;
+    z-index: -1;
+    top: 0; */
+}
+.muLogo{
+
+}

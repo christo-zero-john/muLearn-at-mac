@@ -23,7 +23,7 @@ function initialize(x){
             <div class="col-md-5 d-flex flex-row justify-content-center align-items-center mx-1 mx-md-3 my-2 box-shadow py-3 taskItem" id="">
                 <img class=" col-3 taskItemImg img-fluid p-3 mx-2" src="${tasks[x].img}" alt="">
                 <div class="col-8 d-block" id="task">
-                    <p class="h5 text-center" id="title">${tasks[x].title}</p>
+                    <p class="h5 text-center text-light " id="title">${tasks[x].title}</p>
                     <hr>
 
                     <p class="hashtag p-1 badge badge-light text-dark" id="">
@@ -97,6 +97,7 @@ function getTaskByHashtag(x){
                 <p class="" id="">Hashtag: ${tasks[y].hashtag}</p>
                 <p class="" id="">Mac Score: ${tasks[y].macScore}</p>
                 <p class="" id="">Karma Points: ${tasks[y].karma}</p>
+                <p class="" id="">Channel: ${tasks[y].source}</p>
             </div>
         </div>
             `

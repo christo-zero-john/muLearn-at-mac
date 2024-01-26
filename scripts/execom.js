@@ -75,10 +75,10 @@ function printExecom(data){
                     </p>
                     <div class="social-icons text-nowrap text-center">
                     
-                        <a href="https://www.linkedin.com/in/${data[x].linkedin}"><img src="/assets/img/linkedin.png" alt="LinkedIn" class="socialIcon btn">
-                        <a href="https://www.github.com/in/${data[x].github}"><img src="/assets/img/github.png" alt="LinkedIn" class="socialIcon btn col-3 m-0">
-                        </a>
-                        <a href="https://www.instagram.com/${data[x].instagram}/"><img src="/assets/img/instagram.png" alt="Instagram" class="socialIcon btn"></a>
+                        <a href="https://www.github.com/in/${data[x].mulearn}"><img src="/assets/img/mulearn.png" alt="MuLearn" class="socialIcon btn col-3 m-0"></a>
+                        <a href="https://www.linkedin.com/in/${data[x].linkedin}"><img src="/assets/img/linkedin.png" alt="LinkedIn" class="socialIcon btn col-3 m-0"></a>
+                        <a href="https://www.github.com/in/${data[x].github}"><img src="/assets/img/github.png" alt="GitHub" class="socialIcon btn col-3 m-0"></a>
+                        <a href="https://www.instagram.com/${data[x].instagram}/"><img src="/assets/img/instagram.png" alt="Instagram" class="socialIcon btn col-3 m-0"></a>
                     </div>
                 </div>
             </div>

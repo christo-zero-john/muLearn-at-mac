@@ -58,5 +58,70 @@ function closeAllAnswers() {
     });
   });
   
+function printFaq()
+{
+    var accordion = document.getElementById('accordion');
+    fetch("https://opensheet.elk.sh/1ROUxDLf3nZ_gAJjjjcO5yRgeeRGgncSCGUgCxBWBWVo/faq")
+    .then(res => res.json())
+    .then((questions)=>{
+      console.log(questions);
+      accordion.innerHTML = "";
+      for(x in questions)
+      {
+          if(questions[x].priority == 1)
+          {
+            accordion.innerHTML += `
+              <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading${x}">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse${x}" aria-expanded="false" aria-controls="flush-collapse${x}">
+                ${questions[x].question}
+                </button>
+              </h2>
+              <div id="flush-collapse${x}" class="accordion-collapse collapse" aria-labelledby="flush-heading${x}" data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  ${questions[x].answer}
+                </div>
+              </div>
+            </div>
+          `
+          }
+      }
+      accordion.innerHTML += `
+          <div class="d-md-none sticky-bottom accordion-item">
+          <h2 class="accordion-header" id="flush-headingX">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseX" aria-expanded="false" aria-controls="flush-collapseX">
+              Ask your Doubts
+            </button>
+          </h2>
+          <div id="flush-collapseX" class="accordion-collapse collapse" aria-labelledby="flush-headingX" data-bs-parent="#accordion">
+            <div class="accordion-body" >
+                <form method="post" action="" class="w-fit mx-auto FormBody" >      
+                    <textarea name="entry.1418484372" class="d-block my-2"  name="" id="faqFormSmall" cols="30" rows="3" placeholder="Enter your question / doubt" ></textarea>
+                    <button type="button" class="btn btn-primary d-block mx-auto col-5" onclick="submitFaq(document.getElementById('faqFormSmall').value); document.getElementById('faqFormLarge').value = ''">Submit</button>
+                </form>
+            </div>
+          </div>
+        </div>
+      `
+    })
+}
+
+printFaq();
+
+const store = new SteinStore("https://api.steinhq.com/v1/storages/6576ec2ac5ad5604ce331408");
+function submitFaq(question)
+{
+  var faqForm = document.getElementsByClassName("FormBody");
+  console.log(faqForm);
+  // store.append("faq",[{
+  //   question: question,
+  //   answer:"",
+  //   askedBy:"anonymous",
+  //   priority:0
+  // }])
+  // .then(res => {
+  //   console.log(res);
+  // });
+}
   
   

@@ -412,6 +412,10 @@
   color: orange;
 }
 
+.text-darkorange{
+  color: darkorange;
+}
+
 .text-aqua{
   color: aqua;
 }
@@ -438,6 +442,10 @@
   color: orange;
 }
 
+.link-darkorange{
+  color: darkorange;
+}
+
 .link-aqua{
   color: aqua;
 }
@@ -459,7 +467,11 @@
 }
 
 .link-orange:hover{
-  color: #ffa600bd;
+  color: #ffa5003c;
+}
+
+.link-darkorange:hover{
+  color: #ac6003aa;
 }
 
 .link-aqua:hover{
@@ -488,6 +500,10 @@
   background-color: orange;
 }
 
+.bg-darkorange{
+  background-color: darkorange;
+}
+
 .bg-aqua{
   background-color: aqua;
 }
@@ -511,6 +527,10 @@
 
 .alert-orange{
   background-color: #ffa50050;
+}
+
+.alert-darkorange{
+  background-color: #ff8c0050;
 }
 
 .alert-aqua{

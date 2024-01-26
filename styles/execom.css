@@ -40,6 +40,9 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    background:linear-gradient(#00000065,#00000065), url(/assets/img/coreTeam/cardBack.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .card-title {
@@ -69,12 +72,6 @@ body {
 
 .header-text {
     font-size: inherit; /* Inherit the font size from the parent */
-}
-
-.card-back{
-    background:linear-gradient(#00000065,#00000065), url(/assets/img/coreTeam/cardBack.png);
-    background-size: cover;
-    background-position: center;
 }
 
 .socialIcon{

@@ -17,7 +17,10 @@ header p{
 }
 
 .taskItem{
-    background-color: antiquewhite;
+    background:linear-gradient(#00000080,#00000080), url(/assets/img/tasksBg.avif);
+    background-size: cover;
+    background-position: center;
+    
     border-radius: 5px;
 }
 

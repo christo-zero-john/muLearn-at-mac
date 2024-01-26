@@ -74,7 +74,7 @@
       <p class="text-md-center px-3" id="">
         <span class=" " id="">
           <a href="https://mulearn.org/" class="en-mulearn text-decoration-none">μlearn</a>
-        </span> simply is an awesome space where students hangout for the purpose of learning and skill development. μlearn is a student driven community where students decides everything, and is supported by expert mentors behind the scenes. It is an amazing community initiated by <a href="https://gtechindia.org/" class="">GTech</a> (Group of Technmology communities), for the purpose of bridging the gap between industry and students and make students job ready while they pass out of the colleges. Here we learn as a group, from each other and helps each other learn.
+        </span> simply is an awesome space where students hangout for the purpose of learning and skill development. μlearn is a student driven community where students decides everything, and is supported by expert mentors behind the scenes. It is an amazing community initiated by <a href="https://gtechindia.org/" class="">GTech</a> (Group of Technmology communities), for the purpose of bridging the gap between industry and students to make them job ready while they are still in colleges. Here we learn as a group, from each other and helps each other learn.
         </p>
     </div>
     <div class="col-md-6 d-block" id="">
@@ -163,47 +163,11 @@
       <h2 class="text-center">Frequently Asked Questions</h2>
 
 <!-- Accordion start -->
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  What is mulearn
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  
-                </div>
-              </div>
-          </div>
+      <div class="accordion accordion-flush hd-50 overflow-auto no-scrollbar" id="accordion">
+         
 
   <!-- Ask question section for small screens -->
-          <div class="d-md-none accordion-item">
-            <h2 class="accordion-header" id="flush-heading2">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
-                Ask your Doubts
-              </button>
-            </h2>
-            <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                  <form method="post" action="" class="w-fit mx-auto">
-                    <p class="text-center fw-600 text-dark fs-5">Have Some other Questions</p>
-                    <p class="d-inline">Are you a registered mulearn member</p>
-                    <select class="input-select p-1" id="isMember">
-                      <option value="yes">Yes</option>
-                      <option value="No">No</option>
-                    </select>
         
-                      <fieldset id="">              
-                          <input type="text" name="entry.777203108" class="d-block my-2" id="no" placeholder="Enter your muid">
-        
-                          <textarea name="entry.1418484372" class="d-block my-2"  name="" id="" cols="30" rows="3" placeholder="Enter your question / doubt"></textarea>
-                      </fieldset>
-                      <button class="btn btn-primary d-block mx-auto col-5" type="submit">Submit</button>
-                  </form>
-              </div>
-            </div>
-        </div>
   <!-- Ask question  section for small screens end -->
         
 <!-- Accordion end -->        
@@ -215,7 +179,7 @@
         <img class="d-none d-md-block col-md-3" src="/assets/img/faq.png" alt="" >
 
         <div class="col-md-8  form alert alert-wheat px-4 px-md-5">
-          <form method="post" action="" class="w-fit mx-auto">
+          <form method="post" action="" class="w-fit mx-auto" id="formlarge">
             <p class="text-center fw-600 text-dark fs-5">Have Some other Questions</p>
             <p class="d-inline">Are you a registered mulearn member</p>
               <select class="input-select p-1" id="isMember">
@@ -226,10 +190,12 @@
               <fieldset id="">              
                   <input type="text" class="d-block my-2" id="no" placeholder="Enter your muid">
 
-                  <textarea class="d-block my-2"  name="" id="" cols="30" rows="3" placeholder="Enter your question / doubt"></textarea>
+                  <textarea class="d-block my-2"  name="" id="faqFormLarge" cols="30" rows="3" placeholder="Enter your question / doubt"></textarea>
               </fieldset>
-              <button class="btn btn-primary d-block mx-auto col-5" type="submit">Submit</button>
-          </form>
+              <button class="d-none" type="submit"></button>
+            </form>
+            <button type="button" class="btn btn-primary d-block mx-auto col-5" onclick="submitFaq(document.getElementById('faqFormLarge').value); document.getElementById('faqFormLarge').value = ''">Submit</button>
+          
         </div>
 <!-- FAQ Form End -->
       </div>
@@ -246,6 +212,9 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+<!-- stein API -->
+  <script src="https://unpkg.com/stein-js-client"></script>
   
 <!-- My JS -->
   <script src="/scripts/home.js"></script>
