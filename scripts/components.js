@@ -17,39 +17,39 @@ document.getElementById("navBar").innerHTML  = `
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                <a class="nav-link small" aria-current="page" href="/index.html">Home</a>
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/p/joinus.html">Join Us</a>
+                <a class="nav-link small" aria-current="page" href="/p/joinus.html">Join Us</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/p/muGuide.html">Getting Started</a>
+                <a class="nav-link small" aria-current="page" href="/p/muGuide.html">Getting Started</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/p/tasks.html">All Tasks</a>
+                <a class="nav-link small" aria-current="page" href="/p/tasks.html">All Tasks</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="https://learn.mulearn.org/">Interest Groups</a>
+                <a class="nav-link small" aria-current="page" href="https://learn.mulearn.org/">Interest Groups</a>
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/p/ranks.html">Leaderboard</a>
+                <a class="nav-link small" aria-current="page" href="/p/ranks.html">Leaderboard</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/p/execom.html">Execom</a>
+                <a class="nav-link small" aria-current="page" href="/p/execom.html">Execom</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/p/e/events.html">Events</a>
+                <a class="nav-link small" aria-current="page" href="/p/e/events.html">Events</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/p/faq.html">FAQ</a>
+                <a class="nav-link small" aria-current="page" href="/p/faq.html">FAQ</a>
               </li>
             </ul>
         </div>
