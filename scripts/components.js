@@ -86,19 +86,19 @@ document.getElementById("Footer").innerHTML = `
     </div>
 
     <div class="" id="footerExt">
-        <a href="/p/joinus.html" class="col-4 py-2 col-md-2 text-decoration-none text-left link-orange">Join Us</a>
+        <a href="/p/joinus.html" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange transition-03">Join Us</a>
 
-        <a href="/p/muGuide.html" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange">Getting Started</a>
+        <a href="/p/muGuide.html" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange transition-03">Getting Started</a>
 
-        <a href="/p/tasks.html" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange">All Tasks List</a>
+        <a href="/p/tasks.html" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange transition-03">All Tasks List</a>
 
-        <a href="https://learn.mulearn.org/" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange">Interest Groups</a>
+        <a href="https://learn.mulearn.org/" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange transition-03">Interest Groups</a>
 
-        <a href="/p/execom.html" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange">Our Team</a>
+        <a href="/p/execom.html" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange transition-03">Our Team</a>
 
-        <a href="/p/e/events.html" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange">Events</a>
+        <a href="/p/e/events.html" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange transition-03">Events</a>
 
-        <a href="/p/faq.html" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange">Frequently Asked Questions</a>
+        <a href="/p/faq.html" class="col-4 col-md-2 py-2 text-left text-decoration-none link-orange transition-03">Frequently Asked Questions</a>
     </div>
 
     </footer>
