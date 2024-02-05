@@ -8,7 +8,6 @@ body{
   /* background-image:linear-gradient(#0000007b, #0000007b), url(/assets/img/homeHero1.jpg); */
   background-position: center;
   background-attachment: fixed;
-  background: radial-gradient(#f3dda2b9,#f8f7fa);
 }
 
 /* .heroBg{
