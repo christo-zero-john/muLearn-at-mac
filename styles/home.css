@@ -1,13 +1,27 @@
 body{
   max-width: 100vw;
 }
+
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 93vh;
   /* background-image:linear-gradient(#0000007b, #0000007b), url(/assets/img/homeHero1.jpg); */
   background-position: center;
   background-attachment: fixed;
+  background: radial-gradient(#f3dda2b9,#f8f7fa);
 }
+
+/* .heroBg{
+  width: 100vw;
+  height: 75%;
+  position: absolute;
+  z-index: -1;
+  background-color: blue;
+  left:-20%; 
+  bottom: -30%;
+  transform:rotate(15deg);
+  overflow: hidden;
+} */
 
 .accordion{
   max-height: 75vh;
