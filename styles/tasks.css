@@ -1,74 +1,88 @@
-header{
-    width: 100%;
-    height: 65vh;
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGJbv5olVsph2PLHx0YBN2CnALP3ealECwpFBDLa2FJtj-bzLj&s);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+header {
+  width: 100%;
+  height: 65vh;
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGJbv5olVsph2PLHx0YBN2CnALP3ealECwpFBDLa2FJtj-bzLj&s);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-header p:hover{
-    color: rgb(102, 0, 255);
-    transform: scale(1.2);
+header p:hover {
+  color: rgb(102, 0, 255);
+  transform: scale(1.2);
 }
 
-header p{
-    transition: all 0.5s;
+header p {
+  transition: all 0.5s;
 }
 
-.taskItem{
-    background:linear-gradient(#00000080,#00000080), url(/assets/img/tasksBg.avif);
-    background-size: cover;
-    background-position: center;
-    
-    border-radius: 5px;
+.taskItem {
+  background: linear-gradient(#00000090, #00000090),
+    url(/assets/img/homeBg.jpeg);
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 5px;
 }
 
-#macScoreImg, #karmaPointsImg{
-    height: 20px;
+#macScoreImg,
+#karmaPointsImg {
+  height: 20px;
 }
 
-#karmaPointsImg{
-    border-radius: 5px;
-    background-color: #02565171;
+#karmaPointsImg {
+  border-radius: 5px;
+  background-color: #02565171;
 }
 
-.discordImg{
-    transform: scale(1.2); 
+.discordImg {
+  transform: scale(1.2);
 }
 
-.discordImg:hover{
-    cursor: pointer; 
+.discordImg:hover {
+  cursor: pointer;
 }
 
-/* 
-.macScore, .karmaPoints{
-    border-radius: 5px;
-     background-color: rgb(121, 207, 204); 
-    border: 1px solid black;
-    display: inline;
-    padding-right: 20px;
-} */
-
-/* .karmaPoints{
-    background-color: rgba(255, 166, 0, 0.441) !important;
+.discord div img {
+  width: 20px;
 }
 
-.macScore{
-    background-color: rgba(0, 166, 255, 0.441) !important;
-} */
-
-.hashtag{
-    background-color: aliceblue;
-    width: fit-content;
-    border-radius: 5px;
+.discord p {
+  width: fit-content;
+  background-color: #fff;
 }
 
-.infoImg{
-    width: 30px;
-    cursor: pointer;
+.discord {
+  height: fit-content;
+  background-color: #000;
+  width: fit-content;
+  transition: 0.4s;
+  padding-left: 4px;
+  cursor: pointer;
 }
 
-.infoIcon{
-    width: 100px;
+.discord:hover {
+  background-color: aliceblue;
+  box-shadow: 0 0 7px #fff;
+}
+
+.discord:hover p {
+  background-color: #000;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.hashtag {
+  background-color: aliceblue;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.infoImg {
+  width: 30px;
+  cursor: pointer;
+}
+
+.infoIcon {
+  width: 100px;
 }

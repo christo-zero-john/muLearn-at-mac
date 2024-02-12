@@ -8,6 +8,10 @@
 }
 
 .nav-item{
-    padding:0 10px ;
-    
+    padding:0 10px ;    
 }
+
+.justify-content-start{
+    justify-content: start;
+  }
+  

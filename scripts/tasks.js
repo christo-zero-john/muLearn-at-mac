@@ -42,8 +42,12 @@ function initialize(x){
                     
                     <img class=" img-fluid mx-1 infoImg" src="/assets/img/info.png" alt="" onclick="printTaskDetails('${tasks[x].hashtag}')">
 
-                    <img onclick="redirectTo('${tasks[x].link}','${x}')" class="mx-4 discordImg" src="https://img.shields.io/badge/View%20on%20discord-discord?style=social&logo=discord&logoColor=%230f00ff&color=%23bfdfcc
-                    " alt="click to view task on discord" id="discordLink">
+                    <div class="mx-4 py-1 discord rounded-end-5 d-inline" onclick="redirectTo('${tasks[x].link}','${x}')" id="discordLink">
+                        <div class="d-inline">
+                        <img src="/assets/img/discord.png" alt="" class="">
+                        </div>
+                        <p class="d-inline px-3 py-1 rounded-end-4">View on Discord</p>
+                    </div>
                 </div>
             </div>
           `
