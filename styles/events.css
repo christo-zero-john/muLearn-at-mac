@@ -1,5 +1,31 @@
+.infoImg {
+  width: 10%;
+  cursor: pointer;
+}
 
-.infoImg{
-    width: 20%;
-    cursor: pointer;
+.eventItemImg {
+  height: auto;
+  overflow: auto;
+}
+
+.eventItemImg {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.event-title {
+  background-color: #fccf94;
+}
+
+@media (min-width: 768px) {
+  .event-img-container {
+    height: 300px;
+    width: auto;
+    overflow: auto;
+  }
+
+  .eventItemImg {
+    object-fit: cover;
+  }
 }

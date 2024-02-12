@@ -20,7 +20,7 @@ function initialize(x){
         // console.log(tasks) https://learn.mulearn.org/static/media/freecodecamp.080636d05280aa48d82c43b7ad4ba83e.svg
         for(x in tasks){
                 content += `
-            <div class="col-md-5 d-flex flex-row justify-content-center align-items-center mx-1 mx-md-3 my-2 box-shadow py-3 taskItem" id="">
+            <div class="taskItem col-md-5 d-flex flex-row justify-content-center align-items-center mx-1 mx-md-3 my-2 box-shadow py-3" id="">
                 <img class=" col-3 taskItemImg img-fluid p-3 mx-2" src="${tasks[x].img}" alt="">
                 <div class="col-8 d-block" id="task">
                     <p class="h5 text-center text-light " id="title">${tasks[x].title}</p>
@@ -46,7 +46,7 @@ function initialize(x){
                         <div class="d-inline">
                         <img src="/assets/img/discord.png" alt="" class="">
                         </div>
-                        <p class="d-inline px-3 py-1 rounded-end-4">View on Discord</p>
+                        <p class="d-inline px-3 py-1 rounded-end-4 small text-nowrap">View on Discord</p>
                     </div>
                 </div>
             </div>

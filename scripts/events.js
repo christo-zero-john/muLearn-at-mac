@@ -36,10 +36,12 @@ function initialize(data){
 
         if(data[x].source == 'mac'){
             macEvents.innerHTML += `
-                <div class="m-2 eventItem card col-5 col-md-3 small">
-                <img class="w-10 m-0 p-0 eventItemImg card-header alert alert-success" src="/assets/img/events/${data[x].image}" alt="" class="">
+            <div class="m-2 eventItem card col-11 col-md-3 small no-scrollbar">
+                <div class="event-img-container m-0 p-0 no-scrollbar">
+                    <img class="eventItemImg card-header" src="/assets/img/events/${data[x].image}" alt="" class="">
+                </div>
                 
-                <p class="overflow-auto no-scrollbar card-footer p-auto en-iceberg  bg-success m-0  text-light fs-5 text-center text-nowrap">
+                <p class="overflow-auto no-scrollbar card-footer p-auto en-iceberg  event-title m-0 fs-5 text-center text-nowrap">
                 <img class=" img-fluid mx-1 infoImg" src="/assets/img/info.png" alt="" onclick="popEventdetails('${data[x].hashtag}')">
                 
                 ${data[x].title}

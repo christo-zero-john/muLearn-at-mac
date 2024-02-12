@@ -50,6 +50,7 @@ header p {
 .discord p {
   width: fit-content;
   background-color: #fff;
+  height: 100%;
 }
 
 .discord {

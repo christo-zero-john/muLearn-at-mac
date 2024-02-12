@@ -33,7 +33,7 @@ document.getElementById("navBar").innerHTML  = `
               </li>
 
               <li class="nav-item">
-                <a class="nav-link small" aria-current="page" href="https://learn.mulearn.org/">Interest Groups</a>
+                <a class="nav-link small" aria-current="page" href="/p/interest-groups.html">Interest Groups</a>
               </li>
               
               <li class="nav-item">
@@ -92,7 +92,7 @@ document.getElementById("Footer").innerHTML = `
 
         <a href="/p/tasks.html" class="small col-4 col-md-2 py-2 text-left text-decoration-none link-orange transition-03">All Tasks List</a>
 
-        <a href="https://learn.mulearn.org/" class="small col-4 col-md-2 py-2 text-left text-decoration-none link-orange transition-03">Interest Groups</a>
+        <a href="/p/interest-groups.html" class="small col-4 col-md-2 py-2 text-left text-decoration-none link-orange transition-03">Interest Groups</a>
 
         <a href="/p/execom.html" class="small col-4 col-md-2 py-2 text-left text-decoration-none link-orange transition-03">Our Team</a>
 
