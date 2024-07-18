@@ -8,6 +8,11 @@ body{
   /* background-image:linear-gradient(#0000007b, #0000007b), url(/assets/img/homeHero1.jpg); */
   background-position: center;
   background-attachment: fixed;
+  background: linear-gradient(#ffffff00, #8dfe5c3f), url(/assets/img/counterBg.jpg);
+  
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .accordion{
@@ -22,26 +27,30 @@ body{
 }
 
 .mac{
-  color: rgb(165, 79, 251);
+  color: #c48efb;
   text-shadow: 0px 0px 1px #000;
 }
 
 .cc{
-  color: orange;
+  color: #fbc35b;
   text-shadow: 0px 0px 1px #000;
 }
 
 .title:hover .mac{
-  color: orange;
+  color: #fbc35b;
 }
 
 
 .title:hover .cc{
-  color: rgb(165, 79, 251);
+  color: #c48efb;
 }
 
 .mac, .cc{
   transition: all 1s;
+}
+
+.hero-caption{
+  color: #9bfe6e;
 }
 
 .counter-item:hover{
@@ -65,6 +74,8 @@ body{
 .faq{
   background-color:#d9edff ;
 }
+
+
 
 
 /* Media qweries for medium and up screens */

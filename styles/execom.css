@@ -52,6 +52,12 @@ body {
 .card-text {
     font-size: 14px;
 }
+
+.empty-role-description{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
 /* 
 @media (max-width: 768px) {
     .card {
