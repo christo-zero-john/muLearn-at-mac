@@ -5,60 +5,61 @@
 
 */
 
-document.getElementById("navBar").innerHTML  = `
-<div class="navContainer bg-orange py-1 ">
-<nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-        <a class="mx-1 navbar-brand en-mulearn" href="/index.html">μLEARN</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+let nav = document.getElementById("navBar");
+if (nav) {
+  nav.innerHTML = `
+    <div class="navContainer bg-orange py-1 ">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="mx-1 navbar-brand en-mulearn" href="/index.html">μLEARN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
 
-              <li class="nav-item">
-                <a class="nav-link small" aria-current="page" href="/index.html">Home</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link small" aria-current="page" href="/p/joinus.html">Join Us</a>
-              </li>
+                  <li class="nav-item">
+                    <a class="nav-link small" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link small" aria-current="page" href="/p/joinus.html">Join Us</a>
+                  </li>
 
-              <li class="nav-item">
-                <a class="nav-link small" aria-current="page" href="/p/muGuide.html">Getting Started</a>
-              </li>
+                  <li class="nav-item">
+                    <a class="nav-link small" aria-current="page" href="/p/muGuide.html">Getting Started</a>
+                  </li>
 
-              <li class="nav-item">
-                <a class="nav-link small" aria-current="page" href="/p/tasks.html">All Tasks</a>
-              </li>
+                  <li class="nav-item">
+                    <a class="nav-link small" aria-current="page" href="/p/tasks.html">All Tasks</a>
+                  </li>
 
-              <li class="nav-item">
-                <a class="nav-link small" aria-current="page" href="/p/interest-groups.html">Interest Groups</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link small" aria-current="page" href="/p/ranks.html">Leaderboard</a>
-              </li>
+                  <li class="nav-item">
+                    <a class="nav-link small" aria-current="page" href="/p/interest-groups.html">Interest Groups</a>
+                  </li>
 
-              <li class="nav-item">
-                <a class="nav-link small" aria-current="page" href="/p/execom.html">Execom</a>
-              </li>
+                  <li class="nav-item">
+                    <a class="nav-link small" aria-current="page" href="/p/execom.html">Execom</a>
+                  </li>
 
-              <li class="nav-item">
-                <a class="nav-link small" aria-current="page" href="/p/e/events.html">Events</a>
-              </li>
+                  <li class="nav-item">
+                    <a class="nav-link small" aria-current="page" href="/p/e/events.html">Events</a>
+                  </li>
 
-              <li class="nav-item">
-                <a class="nav-link small" aria-current="page" href="/p/faq.html">FAQ</a>
-              </li>
-            </ul>
+                  <li class="nav-item">
+                    <a class="nav-link small" aria-current="page" href="/p/faq.html">FAQ</a>
+                  </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
-</div>
-`
+    </nav>
+  </div>
+`;
+}
 
-document.getElementById("Footer").innerHTML = `
+let footer = document.getElementById("Footer");
+if (footer) {
+  footer.innerHTML = `
     <!-- Footer -->
     <footer class="small w-100 text-center text-white">
     <div class="container p-4">
@@ -103,10 +104,60 @@ document.getElementById("Footer").innerHTML = `
 
     </footer>
     <!-- Footer -->
-`
-footerExt = document.getElementById("footerExt");
-footerExt.style.display = "none";
+  `;
+  var footerExt = document.getElementById("footerExt");
+  footerExt.style.display = "none";
+}
 
-function expandFooter(){
+function expandFooter() {
   footerExt.classList = `d-flex flex-row justify-content-center align-item-center flex-wrap bg-dark pb-4`;
+}
+
+let adminNavBar = document.getElementById("navBarAdmin");
+
+if (adminNavBar) {
+  adminNavBar.innerHTML = `
+    <div class="navContainer bg-orange py-1 ">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="mx-1 navbar-brand en-mulearn" href="/p/admin.html">μLEARN<span class="adm">ADM</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+
+                  <li class="nav-item">
+                    <a class="nav-link small" aria-current="page" href="/p/adm/todo.html">Todo</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link small" aria-current="page" href="/p/adm/manage-events.html">Manage Events</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link small" aria-current="page" href="/p/adm/manage-task.html">Manage Tasks</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link small" aria-current="page" href="/p/adm/manage-campus-diary.html" class="">Manage Campus Diary</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link small" aria-current="page" href="/p/tasks.html">All Tasks</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link small" aria-current="page" href="/p/e/events.html">Events</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link small" aria-current="page" href="/p/faq.html">FAQ</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </div>
+  `;
 }
