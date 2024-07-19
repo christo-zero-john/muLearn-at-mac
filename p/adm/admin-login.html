@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Login</title>
+  </head>
+  <body>
+    <div class="login-form">
+      <input type="text" class="" id="getCred" />
+      <button class="" id="" onclick="setAdmin()">Login As Admin</button>
+    </div>
+
+    <script>
+      function setAdmin() {
+        console.log(
+          `Setting Admin with ${
+            document.getElementById("getCred").value
+          } as key`
+        );
+        localStorage.setItem("admin", document.getElementById("getCred").value);
+        window.location.href  = '/p/admin.html'
+      }
+    </script>
+  </body>
+</html>

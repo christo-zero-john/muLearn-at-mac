@@ -1,0 +1,21 @@
+.adm{
+    font-size: 18px;
+    color:#fff;
+    background-color: #8061fa;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 4px 8px;
+    margin: 0 2px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.navbar-brand:hover .adm{
+    font-size: 18px;
+    color:#8061fa;
+    background-color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0;
+    font-weight: 800;
+}
